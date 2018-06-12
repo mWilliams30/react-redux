@@ -36,7 +36,7 @@ class CoursesPage extends React.Component{
   }
 }
 
-mapStateToProps = () => {
+mapStateToProps = (state, ownProps) => {
   return{
     courses: state.courses
   };
