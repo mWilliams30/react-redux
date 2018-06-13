@@ -1,10 +1,10 @@
 import * as types from './../actions/actionTypes';
 import initialState from './initialState';
 
-export default (state = initialState.courses, action) => {
+export default (state = initialState.authors, action) => {
   switch (action.type){
-    case types.LOAD_COURSES_SUCESS:
-      return action.courses;
+    case types.LOAD_AUTHORS_SUCESS:
+      return action.authors;
     default:
       return state;
   }
