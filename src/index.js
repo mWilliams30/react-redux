@@ -11,11 +11,12 @@ import {Provider}  from 'react-redux';
 import {loadCourses} from "./actions/courseActions";
 import {loadAuthors} from "./actions/authorActions";
 import {loadQuotes} from "./actions/quoteActions";
+import {loadUnderwriters} from "./actions/underwriterActions";
 
 const store = configureStore();
 store.dispatch(loadCourses());
 store.dispatch(loadAuthors());
-store.dispatch(loadQuotes());
+store.dispatch(loadUnderwriters());
 
 render(
   <Provider store={store}>

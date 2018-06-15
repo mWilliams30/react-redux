@@ -2,33 +2,38 @@ import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as quoteActions from '../../actions/quoteActions';
-import QuoteList from '../quote/QuoteList';
+import QuoteDetails from '../quote/QuoteDetails';
 
 class QuotesPage extends React.Component{
     constructor(props, context){
         super(props, context);              
-    }
+    }  
 
     render(){
-        const {quotes} = this.props;
+        const {underwriters} = this.props;
 
         return(
             <div>
             <h1>Quotes</h1>
-            <QuoteList quotes={quotes} />
+            {underwriters.map(underwriter => 
+               <QuoteDetails 
+                    key={underwriter.Id} 
+                    underwriter={underwriter}
+                    quote={this.props.actions.getQuote(underwriter.Id)} /> 
+            )}                   
             </div>
         );
     }    
 }
 
 QuotesPage.propTypes = {
-    quotes: PropTypes.array.isRequired,
+    underwriters: PropTypes.array.isRequired,
     actions: PropTypes.object.isRequired
   };
 
 function mapStateToProps(state, ownProps){
     return{
-      quotes: state.quotes
+      underwriters: state.underwriters
     };
   }
 
