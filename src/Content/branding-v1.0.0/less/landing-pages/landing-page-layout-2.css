@@ -1,0 +1,215 @@
+﻿#LandingPageLayout2 body,
+#LandingPageLayout2 h1,
+#LandingPageLayout2 h2,
+#LandingPageLayout2 h3 {
+  font-family: sans-serif;
+}
+#LandingPageLayout2 .partners-landing-container,
+#LandingPageLayout2 .review-landing-container {
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#LandingPageLayout2 .footer-link-align {
+  text-align: center;
+}
+#LandingPageLayout2 .footer-link-font {
+  font-size: 11px;
+}
+#LandingPageLayout2 .padding-top {
+  padding-top: 12px;
+}
+#LandingPageLayout2 .site-header {
+  padding: 15px 0 6px;
+}
+#LandingPageLayout2 .col-xs-8,
+#LandingPageLayout2 .col-sm-8,
+#LandingPageLayout2 .col-md-8,
+#LandingPageLayout2 .col-lg-8 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 25px;
+  padding-right: 30px;
+}
+#LandingPageLayout2 .product-hero-image {
+  position: absolute;
+  width: 383px;
+  height: 209px;
+  bottom: -5px;
+  left: 88px;
+}
+#LandingPageLayout2 .col-lg-12 {
+  width: 100%;
+}
+#LandingPageLayout2 .col-lg-offset-1 {
+  margin-left: 2.166667%;
+}
+#LandingPageLayout2 .btn-hero-landing {
+  background: #63B929;
+  background: -webkit-linear-gradient(#63B929, #4AA010);
+  background: -o-linear-gradient(#63B929, #4AA010);
+  background: -moz-linear-gradient(#63B929, #4AA010);
+  background: linear-gradient(#63B929, #4AA010);
+  border-radius: 5px;
+  padding: 4px 48px;
+  font-size: 23px;
+  color: #ffffff;
+  text-transform: none;
+  border: 1px solid #5EB424;
+  box-shadow: 2px 2px 4px #1C367B;
+}
+#LandingPageLayout2 .banner-landing-cta {
+  padding-top: 14px;
+  padding-bottom: 24px;
+}
+#LandingPageLayout2 .banner-landing-cta a span.glyphicon {
+  font-size: 12px;
+  position: relative;
+  width: 7px;
+  top: -1px;
+}
+#LandingPageLayout2 .trustpilot-widget-container {
+  position: absolute;
+  top: 8px;
+  right: 80px;
+  width: 456px;
+  height: 311px;
+}
+#LandingPageLayout2 .trustpilot-widget-hero-align {
+  padding-left: 246px;
+  padding-top: 9px;
+}
+#LandingPageLayout2 .packages-text {
+  line-height: 18px;
+}
+#LandingPageLayout2 #SiteHeader p {
+  font-weight: bold;
+  color: #234397;
+}
+#LandingPageLayout2 #Hero {
+  background-color: #234397;
+  width: auto;
+  height: 360px;
+}
+#LandingPageLayout2 #Hero h1,
+#LandingPageLayout2 #Hero h2,
+#LandingPageLayout2 #Hero ul {
+  color: #ffffff;
+}
+#LandingPageLayout2 #Hero h1 {
+  font-size: 50px;
+}
+#LandingPageLayout2 #Hero h2 {
+  font-size: 20px;
+}
+#LandingPageLayout2 #Hero ul {
+  list-style: disc;
+  padding-left: 15px;
+  font-size: 13px;
+  margin-top: 33px;
+}
+#LandingPageLayout2 #PartnersReviewBanner {
+  background-color: #F2F2F2;
+  width: auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+#LandingPageLayout2 #PartnersReviewBanner h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #234397;
+}
+#LandingPageLayout2 #PartnersReviewBanner img {
+  width: 100%;
+}
+#LandingPageLayout2 #PartnersReviewBanner .padding-space {
+  padding: 4px 34px;
+}
+#LandingPageLayout2 #PackagesBanner {
+  background-color: #234397;
+  width: auto;
+  padding-top: 10px;
+  color: #ffffff;
+  text-align: center;
+}
+#LandingPageLayout2 #PackagesBanner h2,
+#LandingPageLayout2 #PackagesBanner h3 {
+  color: #ffffff;
+}
+#LandingPageLayout2 #PackagesBanner h2 {
+  text-align: center;
+  padding-bottom: 15px;
+}
+#LandingPageLayout2 #PackagesBanner h3 {
+  font-weight: bolder;
+  font-size: 21px;
+}
+#LandingPageLayout2 #Footer,
+#LandingPageLayout2 #FooterMobile {
+  background-color: #333333;
+  width: auto;
+  height: 67px;
+  padding-top: 16px;
+  color: grey;
+}
+#LandingPageLayout2 #Footer a,
+#LandingPageLayout2 #FooterMobile a,
+#LandingPageLayout2 #Footer a:hover,
+#LandingPageLayout2 #FooterMobile a:hover,
+#LandingPageLayout2 #Footer a:focus,
+#LandingPageLayout2 #FooterMobile a:focus,
+#LandingPageLayout2 #Footer a:visited,
+#LandingPageLayout2 #FooterMobile a:visited {
+  color: inherit;
+}
+#LandingPageLayout2 #Footer .footer-link-align a,
+#LandingPageLayout2 #FooterMobile .footer-link-align a {
+  margin-left: 22px;
+  margin-right: 22px;
+}
+#LandingPageLayout2 #HeroMobile h1,
+#LandingPageLayout2 #HeroMobile h2 {
+  color: #ffffff;
+}
+#LandingPageLayout2 #HeroMobile h1,
+#LandingPageLayout2 #HeroMobile h3 {
+  font-weight: bold;
+}
+#LandingPageLayout2 #HeroMobile h1 {
+  font-size: 28px;
+}
+#LandingPageLayout2 #HeroMobile h2 {
+  font-size: 16px;
+}
+#LandingPageLayout2 #HeroMobile h3 {
+  color: #234397;
+  font-size: 14px;
+}
+#LandingPageLayout2 #HeroMobile ul {
+  text-align: left;
+  font-size: 8px;
+}
+#LandingPageLayout2 #HeroMobile img {
+  width: 100%;
+}
+#LandingPageLayout2 #HeroMobile .padding-space {
+  padding-top: 14px;
+  padding-bottom: 28px;
+}
+#LandingPageLayout2 #HeroMobile .container-dimensions {
+  width: 100%;
+  height: 22%;
+}
+#LandingPageLayout2 #PartnersReviewBannerMobile h2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+#LandingPageLayout2 #PartnersReviewBannerMobile .align-centre {
+  text-align: center;
+}
+#LandingPageLayout2 #PackagesBannerMobile p {
+  padding-top: 14px;
+  font-size: smaller;
+  text-align: center;
+  color: #ffffff;
+}

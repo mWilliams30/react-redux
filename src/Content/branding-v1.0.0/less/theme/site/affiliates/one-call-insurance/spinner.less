@@ -1,0 +1,54 @@
+﻿#Loading {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.8);
+	z-index: 1000;
+}
+
+#CustomGradeLoading,
+#QuoteBreakdownLoading,
+ .modal-spinner {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255,255,255,0.8);
+	z-index: 1000;
+}
+
+#LoadingContent
+, #CustomGradeLoadingContent
+, #QuoteBreakdownLoadingContent
+, .modal-spinner .modal-spinner-content {
+	display: table;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#LoadingSpinner
+, #CustomGradeLoadingSpinner
+, #QuoteBreakdownLoadingSpinner
+, .modal-spinner .modal-spinner-content p {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	text-align: center;
+	font-size: x-large;
+	padding-top: 170px;
+	color: @onecallinsurance_brand-blue1;
+	font-weight: bold;
+}
+
+/* Selectors created exclusively for the spinner */
+#QuotePremiumUnitBreakdown {
+	position: relative;
+}

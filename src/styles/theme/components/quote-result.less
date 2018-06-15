@@ -1,0 +1,315 @@
+@quote-result-bg:           #F0F5FF;
+@quote-result-height:       130px;
+@quote-result-padding:  20px;
+@quote-price-color:         #77A545;
+
+// ----> Structure <---- //
+.article-title.quote-results-title {
+	margin-bottom: 30px;
+}
+
+.quote-result {
+	.clearfix;
+	margin-bottom: 25px;
+	.quote-body .quote-choice-wrap span.voluntary-excess-disabled {
+		color: @blue-darkest;
+		font-size: 22px;
+		margin-top: 6px;
+	}
+	.quote-body .quote-choice-wrap span.breakdown-cover-disabled {
+		color: @blue-darkest;
+		font-size: 12px;
+	}
+}
+
+.quote-header,
+.quote-excess-wrap,
+.quote-breakdown-wrap,
+.quote-requirements-wrap,
+.quote-footer {
+	float: left;
+	height: @quote-result-height;
+}
+
+.quote-footer {
+	float: right;
+}
+
+// ----> Header <---- //
+.quote-header {
+	background: #FFF;
+	.box-shadow(0px 1px 2px 0px rgba(0,0,0,0.27));
+	line-height: @quote-result-height;
+	padding: 0 18px;
+	width: 150px;
+}
+
+.quote-brand {
+	height: auto;
+	max-width: 100%;
+}
+
+.quote-price-wrap {
+	text-align: center;
+}
+
+.quote-price {
+	color: @quote-price-color;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+
+// ----> Body <---- //
+.quote-excess-wrap,
+.quote-breakdown-wrap {
+	border-right: 1px solid #C4CFE0;
+	.box-shadow(1px 0px 0px 0px rgba(255,255,255,0.50));
+	padding-top: @quote-result-padding;
+	text-align: center;
+}
+
+.quote-excess-wrap {    width: 140px; }
+.quote-breakdown-wrap { width: 140px; }
+
+.quote-requirements-wrap {
+	position: relative;
+	width: 270px;
+}
+
+.quote-choice-wrap label {
+	color: @blue;
+	display: block;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-transform: uppercase;
+}
+
+.quote-compulsory-excess-label strong {
+	font-size: 15px;
+}
+
+.quote-voluntary-excess {
+	height: 35px;
+	margin: 5px auto 0 auto;
+	text-align: left;
+	width: 80px;
+	.btn { .btn-sm; } // Makes the dropdown a little smaller
+}
+
+.quote-choice-wrap .bootstrap-select.form-control > .btn {
+	height: 35px;
+}
+
+.quote-breakdown-label {
+	background: scroll no-repeat bottom center;
+	.img-retina('../../../images/icons/icon-breakdown.png', '../../../images/icons/icon-breakdown@2x.png', 73px, 29px);
+	padding-bottom: 30px;
+}
+
+.quote-requirements {
+	background: #DEE4F1;
+	border-radius: 3px;
+	-moz-box-shadow:    0px 2px 4px 0px #FFFFFF, inset 0px 1px 5px 0px #C4CCE0;
+	box-shadow:         0px 2px 4px 0px #FFFFFF, inset 0px 1px 5px 0px #C4CCE0;
+	color: #232E42;
+	font-size: 13px;
+	line-height: 28px;
+	list-style: none;
+	padding: 15px 20px;
+	position: absolute;
+	margin: 0;
+	right: @quote-result-padding / 2;
+	bottom: @quote-result-padding / 2;
+	left: @quote-result-padding / 2;
+	top: @quote-result-padding / 2;
+	text-transform: uppercase;
+}
+
+// ----> Footer <---- //
+.quote-footer {
+	padding-right: 30px;
+	padding-top: 25px;
+	width: 200px;
+}
+
+.quote-footer .btn {
+	font-size: 16px;
+	padding: 14px 0;
+}
+
+//
+// Quote Result - Unavailable
+//
+.quote-result-unavailable {
+	background: #fff;
+
+	@media (max-width: @screen-xs-max) {
+		display: none;
+	}
+
+	.quote-header {
+		.box-shadow(none);
+		opacity: 0.5;
+	}
+
+	.quote-body {
+		color: #3A455A;
+		font-size: 15px;
+		line-height: 1.2em;
+		margin-left: 150px;
+		padding: 50px 180px 40px;
+
+		@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+			padding: 50px 80px 40px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+//
+// ----> Tablet <----- //
+//
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max)
+{
+	// ----> Header <---- //
+	.quote-header {
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 114px;
+	}
+	// ----> Body <---- //
+	.quote-excess-wrap          { width: 100px;; }
+	.quote-breakdown-wrap       { width: 100px; }
+	.quote-requirements-wrap    { width: 228px; }
+
+	.quote-choice-wrap label {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.quote-requirements {
+		font-size: 12px;
+		padding: 12px;
+	}
+
+	// ----> Footer <---- //
+	.quote-footer {
+		padding-right: 10px;
+		width: 150px;
+	}
+}
+
+
+
+
+
+//
+// ----> Mobile <----- //
+//
+@media (max-width: @screen-xs-max)
+{
+	// ----> Structure <---- //
+	.quote-results {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.quote-results-title {
+		margin-left: 25px;
+	}
+	.quote-result {
+		margin-bottom: 20px;
+	}
+
+	.quote-header,
+	.quote-excess-wrap,
+	.quote-breakdown-wrap,
+	.quote-requirements-wrap,
+	.quote-footer {
+		float: none;
+		height: auto;
+		width: auto;
+	}
+	// ----> Header <---- //
+	.quote-header {
+		.clearfix;
+		line-height: 70px;
+		padding: 15px;
+	}
+	.quote-brand-wrap,
+	.quote-price-wrap {
+		float: left;
+		width: 50%;
+	}
+
+	.quote-price {
+		display: block;
+		line-height: inherit;
+	}
+	// ----> Body <---- //
+	.quote-choice-wrap {
+		height: 85px;
+		float: left;
+		width: 50%;
+	}
+
+	.quote-choice-wrap label {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.quote-breakdown-wrap {
+		border-right: none;
+	}
+
+	.quote-breakdown-label {
+		background: none;
+		padding-bottom: 0;
+	}
+	
+	.quote-requirements-wrap {
+		clear: both;
+		border-top: 1px solid #C4CFE0;
+	}
+
+	.quote-requirements {
+		position: static;
+		margin: 10px;
+	}
+	// ----> Footer <---- //
+	.quote-footer {
+		.clearfix;
+		padding: 0;
+	}
+
+	.quote-footer .btn {
+		border-radius: 0;
+		border: none;
+	}
+
+	.quote-more-wrap,
+	.quote-submit-wrap {
+		float: left;
+	}
+
+	.quote-more-wrap {
+		width: 40%;
+	}
+
+	.quote-submit-wrap {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+

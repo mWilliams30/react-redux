@@ -1,0 +1,30 @@
+﻿@media (max-width: 455px) {
+  #UkDriversLicenceControls input {
+    width: 100% !important;
+    margin-bottom: 5px !important;
+  }
+}
+#UkDriversLicenceControls .uk-driving-licence-box {
+  margin-right: 11px;
+  float: left;
+}
+#UkDriversLicenceControls .uk-driving-licence-box-1 {
+  width: 106px;
+}
+#UkDriversLicenceControls .uk-driving-licence-box-2 {
+  width: 83px;
+}
+#UkDriversLicenceControls .uk-driving-licence-box-3 {
+  width: 75px;
+}
+#UkDriversLicenceControls .uk-driving-licence-box-4 {
+  width: 59px;
+  margin-right: 0;
+}
+#UkDriversLicenceControls .modal-uk-driving-licence-example {
+  width: 100%;
+}
+#UkDriversLicenceControls span.field-validation-error {
+  display: block;
+  float: left;
+}

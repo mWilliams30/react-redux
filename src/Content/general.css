@@ -1,0 +1,61 @@
+﻿.spacer-top {
+	margin-top: 20px;
+}
+
+.spacer-right {
+	margin-right: 20px;
+}
+
+.spacer-left {
+	margin-left: 20px;
+}
+
+.spacer-bottom {
+	margin-bottom: 20px !important;
+}
+
+.mobile-panel-spacer {
+	clear: both;
+	display: block;
+	width: 1px;
+	height: 5px;
+}
+
+.position-relative {
+	position: relative;
+}
+
+.one-hundred-percent-width {
+	width: 100%;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.break-word {
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+.word-break-disabled {
+	-moz-word-break: normal!important;
+	-o-word-break: normal!important;
+	word-break: normal!important;
+}
+
+.no-wrap {
+	white-space: nowrap !important;
+}
+
+.hand-pointer {
+	cursor: pointer;
+}
+
+.margin-bottom-none {
+	margin-bottom: 0 !important;
+}
+
+.display-control {
+	display: none;
+}

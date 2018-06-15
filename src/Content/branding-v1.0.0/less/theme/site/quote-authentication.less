@@ -1,0 +1,69 @@
+﻿#UserTypes {
+	.btn-call-to-action {
+		background-color: @move-forward-button-colour;
+		color: #fff;
+	}
+
+	.btn-call-to-action:hover {
+		background-color: @move-forward-button-colour-dark;
+		background-image: none;
+		color: #fff;
+	}
+}
+
+#ImportQuestionFormGroup {
+    .has-feedback .form-control-feedback {
+        top: 14px;
+    }
+
+    .field-validation-error {
+        position: absolute;
+        right: 35px;
+        top: -5px;
+    }
+}
+
+#ForgottenPasswordLink {
+    position: relative;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+#BackToLogonLink {
+    left: 0;
+}
+
+@media screen and (min-width: @screen-tablet) {
+    .quote-authenticated-panel-height {
+        display: block;
+        height: 300px;
+        position: relative;
+    }
+
+    .quote-authentication-align-to-bottom {
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+        right: 15px;
+    }
+
+	.validation-summary-errors {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 70%;
+		font-size: 12px;
+	}
+
+    .field-validation-error {
+        font-size: 12px;
+    }
+
+    #ForgottenPasswordLink {
+        position: absolute;
+        display: inline-block;
+        left: 3em;
+        right: 3em;
+    }
+}

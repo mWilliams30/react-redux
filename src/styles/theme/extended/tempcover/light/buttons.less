@@ -1,0 +1,191 @@
+// =Buttons
+// ------------------------------
+.btn {
+	border-width: 1px;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	white-space: normal;
+}
+
+.btn-default {
+    text-shadow: none;
+    padding: 4px 10px;
+}
+
+.btn-lg {
+	font-size: 17px;
+	padding: 20px 35px 18px;
+}
+
+
+.btn-primary {
+	border-radius: 2px;
+	border: none;
+	background: @tempcover-blue;
+
+
+	.glyphicon {
+		color: #fff;
+	}
+}
+
+.btn-secondary {
+	.button-variant(#fff, @yellow-dark, @yellow-dark);
+}
+
+.btn-warning {
+	.box-shadow(inset 0px 4px 1px 0px rgba(255,255,255,0.46));
+}
+
+
+// =Homepage Hero Button
+// ------------------------------
+.btn-hero {
+	background: @move-forward-button-colour;
+	.clearfix;
+	border-radius: 2px;
+	color: #fff;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	&:hover,
+	&:focus {
+		background: @move-forward-button-colour-dark;
+		color: #fff;
+	}
+}
+
+.btn-hero img {
+	float: left;
+	margin-right: 12px;
+}
+
+.btn-hero {
+	.cta-wrap {
+		float: left;
+	}
+
+	.primary-cta,
+	.secondary-cta {
+		display: block;
+		text-align: left;
+	}
+
+	.secondary-cta {
+		font-weight: 400;
+		text-shadow: none;
+		text-transform: none;
+
+		> span {
+			color: #fff;
+		}
+	}
+
+	.chevron-wrap {
+		float: right;
+		margin-right: 10px;
+	}
+
+	.glyphicon {
+		color: #fff;
+		font-size: 40px;
+	}
+
+	.glyphicon-my-account {
+		width: 18px;
+	}
+}
+
+.btn-my-account-new-quote {
+	img {
+		margin-top: 8px;
+		margin-right: 20px;
+	}
+}
+
+
+
+// =Payment Mega Button
+// ------------------------------
+.btn-mega {
+	padding: 20px 30px;
+	text-align: left;
+
+	.primary-cta,
+	.secondary-cta {
+		display: block;
+		line-height: 1.2;
+	}
+
+	.primary-cta {
+		font-size: 22px;
+	}
+
+	.secondary-cta {
+		font-weight: 300;
+	}
+
+	.badge {
+		background: #B2BC00;
+		border-radius: 100px;
+		float: right;
+		font-size: 20px;
+		line-height: 50px;
+		padding: 0;
+		.square(50px);
+		text-align: center;
+		text-shadow: none;
+	}
+
+	.glyphicon {
+		color: #fff;
+		position: relative;
+		top: 2px;
+		left: 1px;
+	}
+
+
+
+	&:hover {
+		border-color: #c82626;
+		background-color: #c82626;
+	}
+}
+
+#ProceedToPayment {
+	background-color: @call-to-action-main;
+	#gradient > .vertical(@call-to-action-main, @call-to-action-main);
+
+	.glyphicon {
+		font-size: 35px;
+	}
+}
+
+#ProceedToPayment:hover {
+	background-color: #c82626;
+	background-image: none;
+}
+
+.btn.toggle {
+    border-radius: 5px;
+}
+
+.btn.toggle-on,
+.btn.toggle-off {
+    border: 0;
+}
+
+.btn.toggle-handle {
+    border-radius: 4px;
+}
+
+.btn-call-to-action {
+	background-color: @move-forward-button-colour;
+	color: #fff;
+}
+
+.btn-call-to-action:hover {
+	background-color: @move-forward-button-colour-dark;
+	color: #fff;
+}

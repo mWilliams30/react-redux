@@ -1,0 +1,95 @@
+﻿@media (max-width: @screen-xs-max) {
+	#DebugRateData {
+		display: none !important;
+	}
+}
+
+#DebugRateData {
+	border: 2px solid #ffb21a;
+	border-left: 0;
+	border-radius: 5px;
+	background-color: #39B3D7;
+	position: fixed;
+	top: 210px;
+	left: -5px;
+	display: block;
+	width: 40px;
+	height: 170px;
+	padding: 25px 20px 25px 25px;
+	z-index: 9999;
+
+	#CollapsePanel {
+		color: #2f3b50;
+		margin-top: -20px;
+		margin-right: -10px;
+		display: none;
+		font-size: 24px;
+		cursor: pointer;
+	}
+}
+
+#DebugRateData #DebugRateDataHeader {
+	transform: rotate(90deg);
+	transform-origin: 10px top 0;
+	width: 140px;
+}
+
+#DebugRateData #DebugRateDataHeader h1.expanded-header,
+#DebugRateData #DebugRateDataHeader h1.vertical-header {
+	font-size: 18px;
+	color: #2f3b50;
+	font-weight: bold;
+}
+
+#DebugRateData #DebugRateDataHeader h1.vertical-header {
+	width: 140px;
+	cursor: pointer;
+}
+
+#DebugRateData #DebugRateDataHeader h1.vertical-header span.glyphicon {
+	margin-right: 10px;
+}
+
+#DebugRateData #DebugRateDataHeader h1.expanded-header {
+	transform: rotate(-90deg);
+	transform-origin: left top 0;
+}
+
+#DebugRateData #DebugRateDataHeader h1.expanded-header span.glyphicon {
+	display: none;
+}
+
+#DebugRateData #DebugRateDataContent {
+	display: none;
+}
+
+#DebugRateData #DebugRateDataContent table {
+	font-size: 12px;
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: solid;
+	border-color: gray;
+	border-collapse: collapse;
+	background-color: white;
+	float: left;
+	margin-right: 10px;
+	margin-top: 20px;
+}
+
+#DebugRateData #DebugRateDataContent table th {
+	border-width: 1px;
+	padding: 0 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+	color: #2f3b50;
+}
+
+#DebugRateData #DebugRateDataContent table td {
+	border-width: 1px;
+	padding: 0 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: white;
+	color: #2f3b50;
+}

@@ -1,0 +1,38 @@
+.btn-group {
+    .btn + .btn,
+    .btn + .btn-group,
+    .btn-group + .btn,
+    .btn-group + .btn-group {
+        margin-left: -2px;
+    }
+}
+
+// Button input groups
+// -------------------------
+.input-group-btn {
+
+    > .btn {
+        height: 42px;
+        + .btn {
+            margin-left: -2px;
+        }
+    }
+
+    &:first-child {
+        > .btn,
+        > .btn-group {
+            margin-right: -2px;
+        }
+    }
+    &:last-child {
+        > .btn,
+        > .btn-group {
+            margin-left: -2px;
+        }
+    }
+}
+
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+    margin-top: 0;
+}

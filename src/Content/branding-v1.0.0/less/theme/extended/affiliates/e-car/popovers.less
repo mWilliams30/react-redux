@@ -1,0 +1,51 @@
+.popover {
+	width: 300px;
+	background-color: transparent;
+	border: 0;
+}
+
+.popover-title {
+	border-bottom: none;
+	color: @yellow-dark;
+	font-weight: bold;
+	padding: 18px 14px 5px 55px;
+	text-transform: uppercase;
+	.img-retina('../../../Images/Icons/icon-info-white.png', '../../../Images/Icons/icon-info-white@2x.png', 50px, 100px);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	background-color: @blue-lighter;
+}
+
+
+.popover-content {
+	font-size: 14px;
+	padding: 0 14px 10px 55px;
+	background-color: @blue-lighter;
+	border-radius: 0 0 5px 5px;
+}
+
+.tooltip.in {
+	opacity: 1;
+	margin-top: -10px;
+}
+
+.tooltip-inner {
+	background: transparent;
+	font-size: 15px;
+	padding: 8px 10px;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+.tooltip.top .tooltip-arrow {
+	border-width: 10px 10px 0;
+	margin-left: -10px;
+	border-top-color: @blue-lighter;
+}
+
+#DateOfBirthPopover,
+#AdditionalDriverOneDateOfBirthPopover,
+#EuIdentityCardExpiryDatePopover,
+.modal-popover {
+	z-index: 1051 !important;
+}

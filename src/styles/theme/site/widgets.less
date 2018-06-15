@@ -1,0 +1,168 @@
+// XXX: Decouple into smaller modules??
+
+
+// --- <Table of Contents> --- //
+//
+// 1. Variables
+//
+// 2. Widgets
+// 2.1 Quote Widget
+// 2.2 Text Widget
+// 2.3 Feature Widgets
+//
+// 3. Footer Widgets
+// 3.1 Guides Widget
+// 3.2 Tweets Widget
+// 3.3 Articles Widget
+//
+// --- </Table of Contents> --- //
+
+// =Variables
+// ------------------------------
+@widget-spacing:            25px;
+
+// =Widgets
+// ------------------------------
+.widget {
+	margin-bottom: 10px;
+}
+
+
+
+
+
+
+// =Quote Widget
+// ------------------------------
+.widget-quote {
+	background: @blue-light;
+	border: none;
+	padding: 25px 25px 25px 35px;
+
+	> p {
+		margin-bottom: 0;
+	}
+
+	cite {
+		font-size: 14px;
+	}
+}
+
+// =Feature Widgets
+// ------------------------------
+.widget-feature {}
+
+// Instant Quote Widget //
+.widget-feature-instant {
+	background: scroll no-repeat center 60px @blue-darkest;
+	/*background: scroll no-repeat center 20px @blue-darkest;*/
+	.img-retina('../../../images/icons/icon-stopwatch.png', '../../../images/icons/icon-stopwatch@2x.png', 126px, 166px);
+	bottom: 0;
+	margin-bottom: 0;
+	padding: 250px 20px 20px;
+	/*padding: 190px 20px 20px;*/
+	position: absolute;
+	right: 5px;
+	text-align: center;
+	top: 0;
+	width: 240px;
+
+	// ----> Tablet <---- //
+	@media (max-width: @screen-sm-max) {
+		background-size: 63px, 83px;
+		padding-top: 150px;
+		width: 215px;
+	}
+
+	/*.speedo p {
+			margin-bottom: 0;
+	}*/
+}
+
+// =Text Widget
+// ------------------------------
+.widget-text {
+	background: @blue-light;
+	padding: 15px 15px 15px 25px;
+
+	> p {
+		font-size: 14px;
+		line-height: 28px;
+		margin-bottom: 0;
+	}
+}
+
+
+
+// =Footer Widgets
+// ------------------------------
+.widget-footer {
+	line-height: 1.3em;
+}
+
+.widget-footer .widget-header {
+	border-bottom: 1px solid #313948;
+	margin-bottom: 20px;
+}
+
+.widget-footer .widget-title {
+	border-bottom: 1px solid @blue-darkest;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	padding-bottom: 15px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+
+
+
+// =Guides Widget
+// ------------------------------
+.widget-guides .guide {
+	margin-bottom: @widget-spacing;
+	a img {
+		border: 1px solid #7C7F83;
+	}
+}
+
+
+.widget-guides div.guide a {
+	color: #fff;
+	-ms-word-break: normal;
+	word-break: normal;
+}
+
+
+// =Tweets Widget
+// ------------------------------
+.widget-tweets .tweet {
+	margin-bottom: @widget-spacing;
+}
+
+
+
+// =Articles Widget
+// ------------------------------
+.widget-articles .article {
+	margin-bottom: @widget-spacing;
+}
+
+
+// =Navigation Widget
+// ------------------------------
+.widget-footer.widget-nav-menu {
+	text-transform: uppercase;
+
+	a {
+		color: @yellow-dark;
+		padding: 5px 0;
+
+		&:hover,
+		&:focus {
+			background: none;
+			text-decoration: underline;
+		}
+	}
+}

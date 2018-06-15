@@ -1,0 +1,183 @@
+// =Site Header
+// ------------------------------
+.site-header {
+	background: @site-header-bg;
+	padding: 30px 0 24px;
+
+	.brand-logo {
+		.hide-text;
+		//.img-retina('../../../images/affiliates/PO76XP304823.png', '../../../images/affiliates/PO76XP304823.png', 240px, 75px);
+        background-image: url('../../../../../../images/affiliates/PO76XP304823.png');
+        .size(350px, 80px);
+        background-size: 350px, 80px;
+		background-repeat: no-repeat;
+		display: block;
+		margin-top: 2px;
+	}
+
+	#branded-hybrid-association-message {
+		display: none;
+	}
+
+	.brand-message,
+	.brand-message-secondary {
+		color: @yellow-dark;
+		text-shadow: none;
+		text-align: right;
+
+		@media (max-width: @screen-xs-max) {
+			text-align: left;
+		}
+	}
+
+	.brand-message {
+		font-size: 30px;
+
+		@media (max-width: @screen-xs-max) {
+			font-size: 26px;
+		}
+
+		> span {
+			display: block;
+		}
+	}
+
+	.brand-message-secondary {
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+		.brand-message-update {
+		font-size: 27px;
+		margin-right:5px;
+
+		@media (max-width: @screen-xs-max) {
+			font-size: 26px;
+		}
+
+		> span {
+			display: block;
+		}
+	}
+
+	.brand-message-secondary-update {
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+
+	.brand-message-update,
+	.brand-message-secondary-update {
+		color: @yellow-dark;
+		text-shadow: none;
+		text-align: right;
+
+		@media (max-width: @screen-xs-max) {
+			text-align: left;
+		}
+	}
+	.navbar-toggle {
+		margin: 0;
+		padding: 0;
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+		}
+
+		.icon-bar {
+			background-color: @navbar-plain-toggle-icon-bar-bg;
+			.box-shadow(0px 1px 2px 0px rgba(0,0,0,0.50));
+			height: 6px;
+			width: 32px;
+		}
+	}
+
+	img.navbar-affiliate {
+		border: 1px solid @blue-darkest;
+	}
+}
+
+
+// ------> Tablet <------ //
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+
+	.site-header .brand-logo {
+		background-image: url('../../../../../../images/affiliates/PO76XP304823.png');
+		background-size: 240px, 75px;
+		.size(240px, 75px);
+	}
+
+	.site-header .brand-logo {
+		margin-top: 0;
+	}
+
+	#branded-hybrid-association-message {
+		display: none;
+	}
+
+	.site-header .brand-message {
+		font-size: 23px;
+		margin-top: 15px;
+	}
+
+	.site-header .brand-message-secondary {
+		display: none;
+	}
+	.site-header .brand-message-update {
+		font-size: 23px;
+		margin-top: 14px;
+	}
+	.site-header .brand-message-update {
+		font-size: 23px;
+		margin-top: 15px;
+	}
+}
+
+// ------> Mobile <------ //
+@media (max-width: @screen-xs-max) {
+	.site-header {
+		padding: 20px;
+
+		.brand-logo {
+			background-image: url('../../../../../../images/affiliates/PO76XP304823.png');
+			background-size: 192px, 50px;
+			.size(192px, 50px);
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		#branded-hybrid-association-message {
+			display: none;
+		}
+
+		.brand-message {
+			margin-bottom: 15px;
+		}
+
+		.brand-message > span {
+			display: inline;
+		}
+
+		.brand-message-secondary {
+			line-height: 1.2;
+		}
+
+		.brand-message-update {
+			margin-bottom: 15px;
+		}
+
+		.brand-message-update > span {
+			display: inline;
+		}
+
+		.brand-message-secondary-update {
+			line-height: 1.2;
+		}
+	}
+
+	.brand-messages {
+		margin-top: 15px;
+	}
+	.brand-messages-update {
+		margin-top: 15px;
+	}
+}

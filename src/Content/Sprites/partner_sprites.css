@@ -1,0 +1,68 @@
+.confused, .haven, .ageas, .sricl, .mulsanne, .eridge, .kgm, .a-plan, .swinton, .aa, .rcib {
+	background: url(/Content/Images/Sprites/partner_sprite_2018.png) no-repeat;
+}
+.confused {
+	background-position: -265px -104px;
+	width: 152px;
+	height: 37px;
+}
+
+.haven {
+	background-position: -105px -56px;
+	width: 94px;
+	height: 37px;
+}
+
+.ageas {
+	background-position: -74px -8px;
+	width: 108px;
+	height: 37px;
+}
+
+.sricl {
+	background-position: -307px -57px;
+	width: 105px;
+	height: 37px;
+}
+
+.mulsanne {
+	background-position: -353px -8px;
+	width: 72px;
+	height: 37px;
+}
+
+.eridge {
+	background-position: -156px -106px;
+	width: 80px;
+	height: 37px;
+}
+
+.kgm {
+	background-position: -9px -53px;
+	width: 90px;
+	height: 37px;
+}
+
+.a-plan {
+	background-position: -203px -6px;
+	width: 116px;
+	height: 37px;
+}
+
+.swinton{
+	background-position: -17px -104px ;
+	width: 116px;
+	height: 37px;
+}
+
+.aa{
+	background-position: -7px -8px ;
+	width: 37px;
+	height: 37px;
+}
+
+.rcib {
+	background-position: -218px -54px;
+	width: 63px;
+	height: 37px;
+}

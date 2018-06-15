@@ -1,0 +1,466 @@
+@quote-result-bg: #F0F5FF;
+@quote-result-height: 130px;
+@quote-result-padding: 20px;
+@quote-price-color: #77A545;
+
+#PolicyStartEndDateTime {
+
+	.form-control {
+		background-color: #fff;
+		cursor: pointer;
+		color: #333;
+		border: 1px solid #7F8BA0;
+		border-right: none;
+		box-shadow: none;
+	}
+
+	.btn-default {
+		border: 1px solid #7F8BA0;
+
+		&:hover {
+			background-color: #fff;
+			border-left: none;
+		}
+	}
+
+	.row.end-time {
+		margin: 10px -5px;
+
+		.quote-underwriter-selection-policy-end-date {
+			padding-top: 0;
+		}
+	}
+}
+
+#DurationSelectionWrap {
+	.clearfix;
+
+	.padding-be-gone {
+		padding: 0;
+	}
+
+	.panel-heading-policy-duration {
+		color: #fff;
+		font-weight: bold;
+		border-bottom: 0;
+		padding: 5px 15px;
+		background-color: @brand-primary;
+	}
+
+	.btn-duration {
+		line-height: 1.33em;
+		font-size: 14px !important;
+		padding: 23px 0 18px;
+		background-color: #fff;
+		color: #11348e;
+		border-radius: 5px;
+		border: none;
+		margin: 5px;
+		border: 1px solid #11348e !important;
+		width: 100px;
+
+		@media (max-width: @screen-xs-max) {
+			width: 70px;
+			min-height: 0 !important;
+			padding: 15px 0;
+		}
+
+		&.units {
+			padding: 16px 18px;
+			width: 155px;
+
+			@media (max-width: @screen-xs-max) {
+				width: 110px;
+			}
+		}
+
+		&.amount {
+			height: 86px;
+		}
+
+		&:hover {
+			background: #e5e5e5;
+		}
+
+		&:focus, &.active, &:active, &.focus {
+			color: #fff;
+			background-color: @yellow-dark;
+
+			&:after {
+				content: "\e013";
+				font-family: 'Glyphicons Halflings';
+				position: absolute;
+				top: 3px;
+				right: 5px;
+				color: #fff;
+			}
+		}
+
+		p {
+			margin: 0;
+
+			&.time {
+				font-size: 24px;
+				margin: 0 0 5px 0;
+			}
+
+			&.other {
+				font-size: 20px;
+				line-height: 36px;
+			}
+		}
+	}
+
+	.quoting-underwriter-overlay {
+		opacity: .8;
+		pointer-events: none;
+	}
+
+	.quoting-underwriter-duration-not-selected {
+		background-color: #fff;
+	}
+
+	@media (max-width: 1024px) {
+		.motorcycle .btn-duration.amount {
+			width: 86px;
+		}
+	}
+}
+
+// ----> Structure <---- //
+.article-title.quote-results-title {
+	margin-bottom: 30px;
+}
+
+.quote-result {
+	background: #fff;
+	.clearfix;
+	margin-bottom: 25px;
+	border: 1px solid #333;
+
+	.quote-body .quote-choice-wrap span.voluntary-excess-disabled {
+		color: @blue-darkest;
+		font-size: 22px;
+		margin-top: 6px;
+	}
+
+	.quote-body .quote-choice-wrap span.breakdown-cover-disabled {
+		color: @blue-darkest;
+		font-size: 12px;
+	}
+}
+
+.quote-header,
+.quote-excess-wrap,
+.quote-breakdown-wrap,
+.quote-requirements-wrap,
+.quote-footer {
+	float: left;
+	height: @quote-result-height;
+}
+
+.quote-footer {
+	float: right;
+}
+
+// ----> Header <---- //
+.quote-header {
+	background: #FFF;
+	.box-shadow(0px 1px 2px 0px rgba(0,0,0,0.27));
+	line-height: @quote-result-height;
+	padding: 0 18px;
+	width: 150px;
+}
+
+.quote-brand {
+	height: auto;
+	max-width: 100%;
+}
+
+.quote-price-wrap {
+	text-align: center;
+}
+
+.quote-price {
+	color: @quote-price-color;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+
+// ----> Body <---- //
+.quote-excess-wrap,
+.quote-breakdown-wrap {
+	.box-shadow(1px 0px 0px 0px rgba(255,255,255,0.50));
+	padding-top: @quote-result-padding;
+	text-align: center;
+}
+
+.quote-excess-wrap {
+	width: 210px;
+}
+
+.quote-breakdown-wrap {
+	width: 140px;
+}
+
+.quote-requirements-wrap {
+	position: relative;
+	width: 340px;
+}
+
+.quote-choice-wrap label {
+	color: #333;
+	display: block;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-transform: uppercase;
+}
+
+.quote-compulsory-excess-label strong {
+	font-size: 15px;
+}
+
+.quote-voluntary-excess {
+	height: 35px;
+	margin: 5px auto 0 auto;
+	text-align: left;
+	width: 80px;
+	color: #333;
+
+	.btn {
+		.btn-sm;
+	}
+	// Makes the dropdown a little smaller
+}
+
+.quote-choice-wrap .bootstrap-select.form-control > .btn {
+	height: 35px;
+}
+
+.quote-breakdown-label {
+	background: scroll no-repeat bottom center;
+	.img-retina('../../../images/icons/icon-breakdown.png', '../../../images/icons/icon-breakdown@2x.png', 73px, 29px);
+	padding-bottom: 30px;
+}
+
+.quote-requirements-motorhome {
+	font-size: 10px !important;
+	padding: 8px 10px !important;
+}
+
+.quote-requirements {
+	font-size: 13px;
+	line-height: 28px;
+	padding: 15px 20px;
+}
+
+.quote-requirements, .quote-requirements-motorhome {
+	background: #e9e9e9;
+	border-radius: 3px;
+	-moz-box-shadow: 0px 2px 4px 0px #FFFFFF, inset 0px 1px 5px 0px #b5b5b5;
+	box-shadow: 0px 2px 4px 0px #FFFFFF, inset 0px 1px 5px 0px #b5b5b5;
+	color: #232E42;
+	list-style: none;
+	position: absolute;
+	margin: 0;
+	right: @quote-result-padding / 2;
+	bottom: @quote-result-padding / 2;
+	left: @quote-result-padding / 2;
+	top: @quote-result-padding / 2;
+	text-transform: uppercase;
+}
+
+// ----> Footer <---- //
+.quote-footer {
+	padding-right: 30px;
+	padding-top: 25px;
+	width: 200px;
+}
+
+.quote-footer .btn {
+	font-size: 16px;
+	padding: 14px 0;
+}
+
+//
+// Quote Result - Unavailable
+//
+.quote-result-unavailable {
+	@media (max-width: @screen-xs-max) {
+		display: none;
+	}
+
+	.quote-header {
+		.box-shadow(none);
+		opacity: 0.5;
+	}
+
+	.quote-body {
+		color: #3A455A;
+		font-size: 15px;
+		line-height: 1.2em;
+		margin-left: 150px;
+		padding: 50px 120px 40px;
+
+		@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+			padding: 50px 80px 40px;
+		}
+	}
+}
+
+
+
+
+
+//
+// ----> Tablet <----- //
+//
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+	// ----> Header <---- //
+	.quote-header {
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 114px;
+	}
+	// ----> Body <---- //
+	.quote-excess-wrap {
+		width: 150px;
+	}
+
+	.quote-breakdown-wrap {
+		width: 100px;
+	}
+
+	.quote-requirements-wrap {
+		width: 278px;
+	}
+
+	.quote-choice-wrap label {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.quote-requirements {
+		font-size: 12px;
+		padding: 12px;
+	}
+
+	.quote-requirements-motorhome {
+		font-size: 8px !important;
+		padding: 8px !important;
+	}
+
+	// ----> Footer <---- //
+	.quote-footer {
+		padding-right: 10px;
+		width: 150px;
+	}
+}
+
+
+
+
+
+//
+// ----> Mobile <----- //
+//
+@media (max-width: @screen-xs-max) {
+	// ----> Structure <---- //
+	.quote-results {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.quote-results-title {
+		margin-left: 25px;
+	}
+
+	.quote-result {
+		margin-bottom: 0;
+	}
+
+	.quote-header,
+	.quote-excess-wrap,
+	.quote-breakdown-wrap,
+	.quote-requirements-wrap,
+	.quote-footer {
+		float: none;
+		height: auto;
+		width: auto;
+	}
+	// ----> Header <---- //
+	.quote-header {
+		.clearfix;
+		line-height: 70px;
+		padding: 15px;
+	}
+
+	.quote-brand-wrap,
+	.quote-price-wrap {
+		float: left;
+		width: 50%;
+	}
+
+	.quote-price {
+		display: block;
+		line-height: inherit;
+	}
+	// ----> Body <---- //
+	.quote-choice-wrap {
+		height: 85px;
+		float: left;
+		width: 100%;
+	}
+
+	.quote-choice-wrap label {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.quote-breakdown-wrap {
+		border-right: none;
+	}
+
+	.quote-breakdown-label {
+		background: none;
+		padding-bottom: 0;
+	}
+
+	.quote-requirements-wrap {
+		clear: both;
+		border-top: 1px solid #C4CFE0;
+	}
+
+	.quote-requirements {
+		position: static;
+		margin: 10px;
+	}
+	// ----> Footer <---- //
+	.quote-footer {
+		.clearfix;
+		padding: 0;
+	}
+
+	.quote-footer .btn {
+		border-radius: 0;
+		border: none;
+	}
+
+	.quote-more-wrap,
+	.quote-submit-wrap {
+		float: left;
+	}
+
+	.quote-more-wrap {
+		width: 40%;
+	}
+
+	.quote-submit-wrap {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}

@@ -1,0 +1,750 @@
+﻿#LandingExitPage {
+    .borderpanel {
+        border: 2px solid #778899;
+    }
+
+    .padding-space-top {
+        padding-top: 10px;
+    }
+
+    .padding-space-top-l {
+        padding-top: 50px;
+    }
+
+    .padding-space-left {
+        padding-left: 35px;
+    }
+
+    .padding-space-left-minus-top {
+        padding-left: 55px;
+        line-height: 1%;
+    }
+
+    .margin-space-left {
+        margin-left: 15px;
+    }
+
+    .padding-space-right {
+        padding-right: 10px;
+    }
+
+    .line-spacing {
+        line-height: 10%;
+    }
+
+    .margin-top {
+        margin-top: -50px;
+    }
+
+    .margin-top-l {
+        margin-top: -80px;
+    }
+
+    .margin-top-s {
+        margin-top: -20px;
+    }
+    /*block-li to display text next to glyphicon for mobile*/
+    .block-li {
+        margin-top: -70px;
+        padding-left: 70px;
+    }
+
+    .block-tap-content {
+        margin-top: -50px;
+        padding-left: 65px;
+    }
+    /*block-li-l to display text next to glyphicon for large resolutions*/
+    .block-li-col-l {
+        margin-top: -35px;
+        padding-left: 35px;
+        line-height: 200%;
+    }
+
+    .li {
+        font-size: 40px;
+    }
+
+    #Col-Why-TempCover {
+        font-size: 16px;
+    }
+
+    .margin-space-top-small {
+        margin-top: -15px;
+    }
+
+    .default-font {
+        font-family: "AvenirNextCustom";
+    }
+
+    .Quote {
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 80%;
+        height: 110px;
+    }
+
+    .TrustPilotNav {
+        width: 100%;
+        height: 50px;
+
+        #review_prev_button {
+            border: 0;
+            background-color: #ffffff;
+            width: 30px;
+        }
+
+        #review_next_button {
+            border: 0;
+            background-color: #ffffff;
+            width: 30px;
+            float: right;
+            margin-right: 70px;
+        }
+
+        #prev_button {
+            color: #000000;
+            font-size: 30px;
+            font-weight: 100;
+        }
+
+        #next_button {
+            color: #000000;
+            font-size: 30px;
+            font-weight: 100;
+        }
+    }
+
+    button:focus {
+        outline: 0;
+    }
+
+    .ul-why-us {
+        margin-top: -35px;
+        padding-left: 30px;
+    }
+
+    nav {
+        background: #FFF;
+        float: left;
+        z-index: 9;
+    }
+
+    nav ul {
+        text-align: center;
+        z-index: 9;
+    }
+
+    nav ul li {
+        float: left;
+        display: inline;
+    }
+
+    nav ul li:hover {
+        /*Code here for background of hover for nav menu*/
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 45px 25px;
+        color: #444;
+    }
+
+    nav ul li ul {
+        position: absolute;
+        width: 110px;
+        margin-top: 30px;
+        margin-left: -130px;
+    }
+
+    nav ul li ul li {
+        margin: 0;
+        padding: 0;
+        background: #F7F7F7;
+    }
+
+    nav ul li ul li a {
+        display: block;
+        padding: 15px 10px;
+        color: #444;
+        background: @blue-darkest;
+    }
+
+    nav ul li ul li:hover a {
+        background: #add8e6;
+    }
+
+    nav ul li ul.fallback {
+        display: none;
+    }
+
+    nav ul li:hover ul.fallback {
+        display: block;
+    }
+
+    #HeroImage {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    #hero-large-content {
+        height: auto;
+        margin-top: 50px;
+    }
+
+    #blur {
+        height: auto;
+    }
+
+    #HeroImage li {
+        font-size: 26px;
+        color: #234397;
+        font-weight: 800;
+        list-style: none;
+        margin-left: -40px;
+        text-shadow: 1px 0px 0px #ffffff, 0px 1px 0px #ffffff, -1px 0px 0px #ffffff, 0px -1px 0px #ffffff, 1px 4px 5px #ffffff;
+    }
+
+    #HeroImage h1 {
+        color: #234397;
+        text-align: left;
+        text-shadow: 1px 0px 0px #ffffff, 0px 1px 0px #ffffff, -1px 0px 0px #ffffff, 0px -1px 0px #ffffff, 1px 4px 5px #ffffff;
+    }
+
+    #HeroImage h3 {
+        color: #234397;
+        text-align: left;
+        text-shadow: 1px 0px 0px #ffffff, 0px 1px 0px #ffffff, -1px 0px 0px #ffffff, 0px -1px 0px #ffffff, 1px 4px 5px #ffffff;
+        font-weight: 600;
+    }
+
+    @media (min-width: @screen-sm) and (max-width: @screen-md) {
+        #HeroImage h1 {
+            font-size: 30px;
+            color: #234397;
+            text-align: left;
+            text-shadow: 1px 0px 0px #ffffff, 0px 1px 0px #ffffff, -1px 0px 0px #ffffff, 0px -1px 0px #ffffff, 1px 4px 5px #ffffff;
+        }
+
+        #HeroImage h3 {
+            font-size: 24px;
+            color: #234397;
+            text-align: left;
+            text-shadow: 1px 0px 0px #ffffff, 0px 1px 0px #ffffff, -1px 0px 0px #ffffff, 0px -1px 0px #ffffff, 1px 4px 5px #ffffff;
+        }
+
+        #HeroImage li {
+            font-size: 140%;
+            font-weight: 600;
+            text-shadow: 1px 0px 0px #ffffff, 0px 1px 0px #ffffff, -1px 0px 0px #ffffff, 0px -1px 0px #ffffff, 1px 4px 5px #ffffff;
+        }
+    }
+    // Hero Small section start
+    #hero-small {
+        width: auto;
+        background-color: #234397;
+        height: auto;
+    }
+
+    #hero-small-content {
+        background-color: #234397;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .hero-small-title {
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    .hero-small-description {
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .hero-small-telephone {
+        color: #ffffff;
+        font-size: 35px;
+        font-weight: 800;
+    }
+
+    .hero-small-telephone-icon {
+        color: #000000;
+        font-size: 40px;
+        font-weight: 800;
+        transform: rotate(24deg);
+    }
+
+    .hero-small-text {
+        color: #ffffff;
+        font-size: 13px;
+        margin-top: -10px;
+        font-weight: 500;
+        width: 320px;
+    }
+
+    .button-text-small {
+        font-size: 14px;
+    }
+    // Hero Small section end
+    // Car image section start
+    #car-image {
+        background-image: url(../../Content/Images/car.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 480px;
+        background-size: contain;
+
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    // Car image section end
+    #benefits-mobile {
+        color: #234397;
+        padding-top: 10px;
+        font-size: 20px;
+        font-weight: 800;
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+    // Tap For More Info section start
+    #tap-for-more-info {
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000000;
+            text-align: center;
+        }
+
+        #container {
+            height: 160px;
+            margin-bottom: 30px;
+            background-color: #ffffff;
+            overflow: hidden;
+
+            #content_why_us {
+                display: none;
+                margin-top: 40px;
+                overflow: hidden;
+
+                span {
+                    color: #006400;
+                    font-size: 50px;
+                    padding-top: 5px;
+                }
+            }
+
+            #content_why_us2 {
+                width: auto;
+                margin-left: 18px;
+                padding-right: 5px;
+                height: 100px;
+                display: none;
+                overflow: hidden;
+
+                p {
+                    font-size: 25px;
+                    text-align: left;
+                    color: #234397;
+                    font-weight: 600;
+                }
+            }
+
+            #content_why_us3 {
+                font-size: 25px;
+                text-align: left;
+                color: #234397;
+                font-weight: 600;
+
+                span {
+                    color: #006400;
+                    font-size: 50px;
+                    padding-top: 5px;
+                }
+            }
+
+            #content_why_us4 {
+                width: 340px;
+                height: 100px;
+                display: none;
+                overflow: hidden;
+
+                p {
+                    font-size: 21px;
+                    color: #234397;
+                    font-weight: 600;
+                }
+            }
+
+            #content_why_us21 {
+                display: none;
+                margin-top: 40px;
+                overflow: hidden;
+
+                span {
+                    color: #808080;
+                    font-size: 50px;
+                    padding-top: 5px;
+                }
+            }
+
+            #content_why_us22 {
+                width: 340px;
+                height: 100px;
+                display: none;
+                overflow: hidden;
+
+                p {
+                    font-size: 25px;
+                    text-align: center;
+                    color: #234397;
+                    font-weight: 600;
+                }
+            }
+
+            #content_why_us23 {
+                display: none;
+                margin-top: 40px;
+                overflow: hidden;
+
+                span {
+                    color: #808080;
+                    font-size: 50px;
+                    padding-top: 5px;
+                }
+            }
+
+            #content_why_us24 {
+                width: 320px;
+                height: 100px;
+                display: none;
+                overflow: hidden;
+
+                p {
+                    font-size: 25px;
+                    text-align: left;
+                    color: #234397;
+                    font-weight: 600;
+                }
+            }
+
+            #content_why_us31 {
+                display: none;
+                margin-top: 40px;
+                overflow: hidden;
+
+                span {
+                    color: #000000;
+                    font-size: 50px;
+                    padding-top: 5px;
+                }
+            }
+
+            #content_why_us32 {
+                width: 340px;
+                height: 100px;
+                display: none;
+                overflow: hidden;
+
+                p {
+                    font-size: 25px;
+                    text-align: center;
+                    color: #234397;
+                    font-weight: 600;
+                }
+            }
+
+            #content_why_us33 {
+                display: none;
+                margin-top: 40px;
+                overflow: hidden;
+
+                span {
+                    color: #000000;
+                    font-size: 50px;
+                    padding-top: 5px;
+                }
+            }
+
+            #content_why_us34 {
+                width: 340px;
+                height: 100px;
+                display: none;
+                overflow: hidden;
+
+                p {
+                    font-size: 25px;
+                    text-align: center;
+                    color: #234397;
+                    font-weight: 600;
+                }
+            }
+
+            #glyphicon_bn_1 {
+                background-color: #ffffff;
+                overflow: hidden;
+                width: 33%;
+                height: 150px;
+
+                button {
+                    border: 0;
+                    background-color: #ffffff;
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+                    top: 83px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                span {
+                    color: #006400;
+                    font-size: 90px;
+                }
+            }
+
+            #glyphicon_bn_2 {
+                background-color: #ffffff;
+                overflow: hidden;
+                width: 34%;
+                height: 150px;
+
+                button {
+                    border: 0;
+                    background-color: #ffffff;
+                    width: auto;
+                    height: auto;
+                    position: absolute;
+                    top: 83px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                span {
+                    color: #808080;
+                    font-size: 90px;
+                }
+            }
+
+            #glyphicon_bn_3 {
+                background-color: #ffffff;
+                overflow: hidden;
+                width: 33%;
+                height: 150px;
+
+                button {
+                    border: 0;
+                    background-color: #ffffff;
+                    width: auto;
+                    height: 100px;
+                    position: absolute;
+                    top: 75px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+    //Tap For More Info section end
+    // Why Choose Us section start
+    #why_choose_us {
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000000;
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 5px;
+
+            .heart {
+                font-size: 25px;
+                color: #ce0100;
+            }
+
+            .partnered {
+                color: #000000;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            .list {
+                font-size: 25px;
+                color: #708090;
+            }
+
+            .competitive {
+                color: #000000;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            .gbp {
+                font-size: 25px;
+                color: #000000;
+                font-weight: 900;
+            }
+
+            .prices {
+                color: #000000;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            .star {
+                font-size: 25px;
+                color: #ffff00;
+            }
+
+            .customers {
+                color: #000000;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            .certificate {
+                font-size: 25px;
+                color: #00008b;
+            }
+
+            .award {
+                color: #000000;
+                font-size: 15px;
+                font-weight: 700;
+            }
+        }
+    }
+    // Why Choose Us section end
+    .partners-title {
+        color: #234397;
+        font-size: 25px;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .partners-image {
+        height: 150px;
+        background-image: url(../../Content/Images/Partners-Banner.png);
+        background-repeat: no-repeat;
+    }
+
+    .partners-image-md {
+        height: 150px;
+        background-image: url(../../Content/Images/Partners-Banner-md.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .partners-image-xs {
+        height: 150px;
+        background-image: url(../../Content/Images/Partners-Banner-xs.png);
+        background-repeat: no-repeat;
+    }
+
+    #sub-product-headline {
+        .title {
+            color: #234397;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .text {
+            padding-left: 5px;
+            padding-right: 5px;
+            color: #234397;
+        }
+    }
+
+    #sub-product-headline-xs {
+        .title {
+            color: #234397;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        .text {
+            padding-left: 5px;
+            padding-right: 5px;
+            color: #234397;
+        }
+    }
+
+    .trust-pilot-rating {
+        background-color: #ffffff;
+        height: 200px;
+
+        p {
+            color: #234397;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 800;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+
+    .testimonials {
+        background-color: #ffffff;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    #testimonial-comment-icon {
+        color: #000000;
+        font-size: 70px;
+        font-weight: 500;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .container-review {
+        height: 130px;
+        background-color: #ffffff;
+        overflow: hidden;
+
+        .testimonial-text {
+            display: none;
+
+            .bold {
+                font-size: 20px;
+                font-weight: 600;
+                text-align: left;
+            }
+
+            p {
+                font-size: 15px;
+                font-weight: 500;
+                text-align: center;
+            }
+        }
+    }
+
+    #benefit-gbp {
+        font-weight: 900;
+    }
+}

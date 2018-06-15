@@ -1,0 +1,44 @@
+﻿.basic-details-product-tile h4 {
+  font-size: 14px;
+  text-align: center;
+}
+.basic-details-product-tile div {
+  display: block;
+  height: 180px;
+  text-align: center;
+  position: relative;
+}
+.basic-details-product-tile div img:hover {
+  cursor: pointer;
+  padding-top: 0;
+  opacity: 0.9;
+}
+.basic-details-product-tile div img {
+  border: 1px solid #234197;
+}
+.basic-details-product-tile div span.selected-text {
+  font-size: 18px;
+  color: #27b3ed;
+  background-color: #fff;
+  border: 1px solid #234197;
+  padding: 4px 5px 3px 3px;
+}
+.basic-details-product-tile div span.glyphicon {
+  font-size: 25px;
+  position: absolute;
+  top: 132px;
+  right: 8px;
+}
+.basic-details-product-tile.selected h4 {
+  font-weight: bold;
+}
+.basic-details-product-tile.selected div img {
+  padding-top: 0;
+  width: 149px;
+  border: 4px solid transparent;
+  -moz-border-image: -moz-linear-gradient(top, #234197 0%, #27b3ed 100%);
+  -webkit-border-image: -webkit-linear-gradient(top, #234197 0%, #27b3ed 100%);
+  border-image: linear-gradient(to bottom, #234197 0%, #27b3ed 100%);
+  border-image-slice: 1;
+}
+/*# sourceMappingURL=quote-basic-details.css.map */

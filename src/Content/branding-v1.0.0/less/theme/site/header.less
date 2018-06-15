@@ -1,0 +1,137 @@
+// =Site Header
+// ------------------------------
+.site-header {
+	background: @site-header-bg;
+	padding: 30px 0 24px;
+
+	.brand-logo {
+		.hide-text;
+		.img-retina('../../../images/TempcoverBrandLogo.png', '../../../images/TempcoverBrandLogo@2x.png', 330px, 57px);
+		.size(330px, 57px);
+		display: block;
+		margin-top: 2px;
+	}
+
+	#branded-hybrid-association-message {
+		display: none;
+	}
+
+	.brand-message,
+	.brand-message-secondary {
+		color: @yellow-dark;
+		text-shadow: none;
+		text-align: right;
+
+		@media (max-width: @screen-xs-max) {
+			text-align: left;
+		}
+	}
+
+	.brand-message {
+		font-size: 30px;
+		@media (max-width: @screen-xs-max) {
+			font-size: 26px;
+		}
+
+		> span {
+			display: block;
+		}
+	}
+
+	.brand-message-secondary {
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+
+	.navbar-toggle {
+		margin: 0;
+		padding: 0;
+
+		&:hover,
+		&:focus {
+			background-color: transparent;
+		}
+
+		.icon-bar {
+			background-color: @navbar-plain-toggle-icon-bar-bg;
+			.box-shadow(0px 1px 2px 0px rgba(0,0,0,0.50));
+			height: 6px;
+			width: 32px;
+		}
+	}
+
+	img.navbar-affiliate {
+		border: 1px solid @blue-darkest;
+	}
+}
+
+.call-centre-top-quote-button-anchor {
+	margin-top: -7px;
+	margin-left: 32px;
+
+	#CallCentreTopQuoteButton {
+		line-height: 0.9;
+	}
+}
+
+
+// ------> Tablet <------ //
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+
+	.site-header .brand-logo {
+		background-image: url('../../../../images/TempcoverBrandLogo@2x.png');
+		background-size: 240px, 40px;
+		.size(240px, 40px);
+	}
+
+	.site-header .brand-logo {
+		margin-top: 0;
+	}
+
+	#branded-hybrid-association-message {
+		display: none;
+	}
+
+	.site-header .brand-message {
+		font-size: 23px;
+	}
+
+	.site-header .brand-message-secondary {
+		display: none;
+	}
+}
+
+// ------> Mobile <------ //
+@media (max-width: @screen-xs-max) {
+	.site-header {
+		padding: 20px;
+
+		.brand-logo {
+			background-image: url('../../../../images/TempcoverBrandLogo@2x.png');
+			background-size: 192px, 32px;
+			.size(192px, 32px);
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.brand-message {
+			margin-bottom: 15px;
+		}
+
+		#branded-hybrid-association-message {
+			display: none;
+		}
+
+		.brand-message > span {
+			display: inline;
+		}
+
+		.brand-message-secondary {
+			line-height: 1.2;
+		}
+	}
+
+	.brand-messages {
+		margin-top: 15px;
+	}
+}

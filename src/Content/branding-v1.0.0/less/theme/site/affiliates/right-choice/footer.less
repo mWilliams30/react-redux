@@ -1,0 +1,133 @@
+// =Site Footer
+// ------------------------------
+.site-footer {
+	background: @site-footer-bg;
+}
+
+.site-footer > .container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.site-footer > .container > .row {
+	background: @site-footer-bg;
+	font-size: 14px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: 5px;
+}
+
+.site-footer a {
+	color: @orange;
+	-ms-word-break: normal;
+	word-break: normal;
+}
+
+#FooterCopyright {
+	font-size: 12px;
+	text-align: center;
+	a {
+		color: #fff;
+	}
+}
+
+.deep-footer {
+	background-color: @blue-darkest;
+	padding-top: 10px;
+}
+
+.payment-types-footer {
+	background-color: @blue-darkest;
+	padding: 0px 30px 15px 36px;
+	margin-top: -40px;
+}
+
+.footer-link-list-item {
+	display: inline-block;
+	margin-right: 7px;
+}
+
+.footer-link-list {
+	font-weight: 600;
+	list-style: none;
+	padding-left: 0;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.social-media-icons-container {
+	position: absolute;
+	right: 0px;
+	margin-top: 20px;
+}
+
+.layout-footer-links {
+	border-bottom: 2px solid @blue-darkest;
+}
+
+.footer-link-list-item > a {
+	color: #ffffff;
+}
+
+.social-media-icons-container > a:hover .social-media-icon-box {
+	background: transparent;
+}
+
+.social-media-icon-box {
+	border-radius: 3px;
+	padding-top: 8px;
+	padding-left: 3px;
+	text-align: center;
+	box-sizing: border-box;
+	width: 35px;
+	height: 30px;
+	color: @site-header-bg;
+	margin-right: 5px;
+	background: lighten(@yellow-dark,20%);
+}
+
+.pull-col {
+	left: auto;
+}
+// Tablet options
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+	.footer-link-list {
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.footer-link-list-item {
+		display: inline-block;
+	}
+
+	.social-media-icons-container {
+		position: relative;
+		text-align: center;
+	}
+}
+
+// -----> Payment Options for Mobile <----- //
+@media (max-width: @screen-xs) {
+	.payment-options-text {
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+
+	.payment-options-paypal-image {
+		margin-top: 10px;
+	}
+
+	.footer-link-list {
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.footer-link-list-item {
+		display: block;
+	}
+
+	.social-media-icons-container {
+		position: relative;
+		text-align: center;
+	}
+}

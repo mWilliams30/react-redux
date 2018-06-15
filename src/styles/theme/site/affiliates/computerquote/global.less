@@ -1,0 +1,55 @@
+// =Global
+// ------------------------------
+@media (max-width: @screen-xs-max) {
+	.site-content {
+		background: @blue-darkest;
+	}
+}
+.container {
+	max-width: 1000px;
+}
+
+
+// =Typography
+// ------------------------------
+blockquote {
+	font-size: 18px;
+	line-height: 28px;
+}
+blockquote p {
+	position: relative;
+}
+
+blockquote p:before,
+blockquote p:after {
+	color: @yellow-dark;
+	font-size: 30px;
+}
+
+blockquote p:before {
+	content:"\201C";
+	left: -20px;
+	position: absolute;
+	top: 0px;
+}
+
+blockquote p:after {
+	content:"\201D";
+	left: 5px;
+	line-height: 0;
+	position: relative;
+	top: 8px;
+}
+
+.yellow {
+	color: @yellow-dark;
+}
+
+.emphasise {
+	font-weight: bold;
+	color: #f00;
+}
+
+.emphasise-without-colour-change {
+	font-weight: bold;
+}

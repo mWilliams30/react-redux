@@ -1,0 +1,358 @@
+// =Homepage
+// ------------------------------
+
+.homepage-quote-button {
+	font-size: 36px;
+	padding: 12px 45px;
+
+	.glyphicon {
+		top: 5px;
+	}
+}
+
+.hero {
+	background: @blue-darkest;
+	padding: 40px 0;
+
+	@media (max-width: @screen-xs-max) {
+		padding: 15px 0;
+	}
+}
+
+.hero-title,
+.hero-subtitle {
+	color: #101820;
+	font-size: 33px;
+	font-weight: 700;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+.hero-title {
+	margin-top: 10px;
+	margin-bottom: 8px;
+
+	@media (max-width: @screen-sm-max) {
+		font-size: 28px;
+		margin-top: 15px;
+	}
+}
+
+.hero-subtitle {
+	font-size: 25px;
+	font-weight: 400;
+
+	span {
+		color: @yellow-dark;
+	}
+
+	@media (max-width: @screen-sm-max) {
+		font-size: 22px;
+	}
+}
+
+
+
+// =Blocks
+// ------------------------------
+.block {
+	background: @blue;
+	height: 590px;
+	margin-bottom: 50px;
+	position: relative;
+
+	@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+		height: 700px;
+	}
+}
+
+.block-header {
+	padding: 30px 30px 5px 30px;
+}
+
+.block-body {
+	padding: 10px 30px 30px;
+}
+
+.block-title {
+	color: @blue-lighter;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+
+.block .cta {
+	background: @yellow-dark;
+	bottom: 0;
+	color: #fff;
+	font-size: 17px;
+	line-height: 1em;
+	padding: 15px 25px;
+	position: absolute;
+	right: 0;
+
+	@media (max-width: @screen-sm-max) {
+		font-size: 12px;
+	}
+}
+
+.block-why-temp-cover .block-header {
+	padding: 30px 30px 5px 30px;
+	background-position-x: -1px; /*This fixes an IE bug that draws a white line.*/
+}
+
+.list-features {
+	padding: 0;
+}
+
+.list-features-mobile li {
+	padding-left: 0 !important;
+	font-size: 10px;
+}
+
+.list-features li {
+	font-size: 18px;
+	line-height: 60px;
+	list-style: none;
+	margin-bottom: 4px;
+	padding-left: 0;
+
+	&.compare {
+		background-position: 0 10px;
+	}
+
+	&.instant {
+		background-position: 0 -118px;
+	}
+
+	&.immediate {
+		background-position: 0 -55px;
+	}
+
+	&.protect {
+		background-position: 0 -182px;
+	}
+
+	span.glyphicon {
+		font-size: 35px;
+		margin-right: 10px;
+		top: 9px;
+	}
+
+	span.glyphicon-mobile {
+		font-size: 20px;
+		margin-right: 10px;
+		top: 5px;
+	}
+
+	@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+		font-size: 13px;
+
+		span.glyphicon {
+			font-size: 30px;
+		}
+	}
+
+	@media (max-width: @screen-xs-max) {
+		background-size: 25px 115px;
+		font-size: 13px;
+		height: 36px;
+		line-height: 36px;
+		padding-left: 30px;
+		white-space: pre;
+
+
+		&.compare {
+			background-position: 0 13px;
+		}
+
+		&.instant {
+			background-position: 0 -52px;
+		}
+
+		&.immediate {
+			background-position: 0 -21px;
+		}
+
+		&.protect {
+			background-position: 0 -84px;
+		}
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+	.features-wrap {
+		padding-top: 20px;
+	}
+}
+
+.block-why-us .awards {
+	padding-left: 2px;
+
+	img {
+		margin-right: 4px;
+		margin-bottom: 4px;
+	}
+}
+
+.block-why-temp-cover,
+.block-why-us {
+	margin-bottom: 8px;
+}
+
+
+
+// ---> Cover Options <--- //
+.cover-options {
+	.clearfix;
+	margin-bottom: @grid-gutter-width;
+
+	@media (max-width: @screen-xs-max) {
+		text-align: center;
+	}
+}
+
+.cover-options .cover-option {
+	border-left: 1px solid @blue-dark;
+	border-right: 1px solid @blue-dark;
+	float: left;
+	position: relative;
+	width: 20%;
+
+	@media (max-width: @screen-xs-max) {
+		display: inline-block;
+		float: none;
+		margin-bottom: 10px;
+		max-width: 280px;
+		width: auto;
+	}
+}
+
+.cover-options .cover-option-half-width {
+	width: 50%;
+}
+
+.cover-options .cover-option-thirds {
+	width: 33.33%;
+}
+
+.cover-options .cover-option img {
+	.img-responsive;
+
+	@media (max-width: @screen-xs-max) {
+		.square(280px);
+	}
+}
+
+.cover-options .cover-option .title {
+	background: @yellow-dark;
+	color: #fff;
+	display: block;
+	font-size: 13px;
+	line-height: 1em;
+	padding: 12px 0;
+	text-align: center;
+	text-transform: uppercase;
+
+	@media (max-width: @screen-sm-max) {
+		padding: 12px 26px;
+	}
+
+	@media (max-width: @screen-xs-max) {
+		font-size: 20px;
+	}
+}
+
+.cover-options .cover-option .btn {
+	bottom: 0;
+	position: absolute;
+	right: 0;
+}
+
+.latest-tweet {
+	font-family: 'Times New Roman', Times, serif, @font-family-base !important;
+}
+
+#CoreSiteNavigation {
+	a.HomeButton {
+		color: @blue-darkest;
+		background-color: @yellow-dark;
+		width: 38px;
+		height: 38px;
+		display: block;
+		padding-top: 5px;
+		text-align: center;
+		margin-left: 5px;
+	}
+
+	a.HomeButton:hover {
+		color: #fff;
+		background-color: @blue-lighter;
+		width: 38px;
+		height: 38px;
+		display: block;
+		padding-top: 5px;
+		text-align: center;
+		margin-left: 5px;
+	}
+}
+
+.call-centre-phone-number {
+	h3 {
+		span.glyphicon-earphone {
+			font-size: 24px;
+			-moz-transform: rotate(24deg);
+			-ms-transform: rotate(24deg);
+			-o-transform: rotate(24deg);
+			-webkit-transform: rotate(24deg);
+			transform: rotate(24deg);
+			margin-right: 5px;
+		}
+	}
+
+	div {
+		width: 284px;
+
+		h4 {
+			font-size: 12px;
+			text-align: center;
+			margin-bottom: 0;
+		}
+	}
+}
+
+.call-centre-phone-number-mobile {
+	.hero-title {
+		margin: auto;
+		margin-top: 20px;
+	}
+
+	h3 {
+		span.glyphicon-earphone {
+			font-size: 24px;
+			-moz-transform: rotate(24deg);
+			-ms-transform: rotate(24deg);
+			-o-transform: rotate(24deg);
+			-webkit-transform: rotate(24deg);
+			transform: rotate(24deg);
+			margin-right: 5px;
+		}
+	}
+
+	div {
+		margin: auto;
+		width: 284px;
+
+		h4 {
+			font-size: 12px;
+			text-align: center;
+			margin-bottom: 0;
+		}
+	}
+}
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+    .homepage-quote-button {
+        padding: 12px 38px;
+    }
+}

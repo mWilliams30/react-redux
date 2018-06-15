@@ -1,0 +1,247 @@
+.desktop-full {
+	width: 100%;
+	float: left;
+}
+
+.wrapper-to-differentiate-site-header .hero {
+	background: transparent;
+}
+
+.navigation-bar-categories {
+	margin-top: 0;
+	margin-bottom: 0;
+	float: left;
+}
+
+.navigation-bar-category {
+	display: inline;
+	float: left;
+}
+
+.navigation-bar-categories a:hover {
+	cursor: pointer;
+	color: @yellow-dark;
+}
+
+.navigation-bar-categories a:active {
+	text-decoration: none !important;
+}
+
+.navigation-bar-category-link {
+	text-decoration: none;
+	color: @yellow-dark;
+	font-size: large;
+	font-stretch: expanded;
+}
+
+.navigation-bar-category-content-link {
+	margin-left: 7px;
+	margin-right: 20px;
+	color: darken(@yellow-dark,5%);
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+.icon-size {
+	font-size: 0.75em;
+	padding-left: 0px;
+}
+
+.navigation-bar-subcategories {
+	display: none;
+	padding-top: 15px;
+	width: 98%;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-left:8px;
+	margin-top: 35px;
+	background: @site-header-bg;
+	padding-bottom: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
+	box-shadow: 0 3px 5px 0 rgba(50,50,50,.25);
+	z-index: 100;
+	line-height: 1.5em;
+}
+
+.navigation-bar-col {
+	width: 30%;
+	float: left;
+	padding-right: 5px;
+}
+
+.navigation-bar-subcategory {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: left;
+}
+
+.navigation-bar-subcategory-header {
+	text-transform: uppercase;
+	color: @yellow-dark;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.navigation-bar-subcategory-contents {
+	padding-left: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.custom-bullet li:before {
+	list-style: none;
+	content: "\e080";
+	font-family: 'Glyphicons Halflings';
+	font-size: 10px;
+	float: left;
+	margin-top: 2px;
+	margin-left: -1.25em;
+	margin-right: 0px;
+	color: @yellow-dark;
+	padding-right: 10px;
+}
+
+.navigation-bar-subcategory-contents-item {
+	display: block;
+	margin-top: 0.6em;
+	position: relative;
+	padding-left: 10px;
+	&>a:hover, &>a:focus{
+		text-decoration:none !important;
+	}
+}
+
+.navigation-bar-subcategory-contents-left-border {
+	border-left: 1px solid darken(@site-header-bg, 5%);
+}
+
+.navigation-bar-wrapper {
+	width: 35%;
+	float: left;
+	padding-right: 10px;
+	margin-top:10%;
+}
+
+
+.navigation-bar-promo-button {
+	position: relative;
+	text-align: center;
+}
+
+.btn-navigation-quote {
+	display: inline-block;
+	padding: 25px 20px;
+	border-radius: 2px;
+	border: 4px solid darken(@call-to-action-main, 15%);
+	box-shadow: 0 6px 4px 0 rgba(0,0,0,0.44);
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .02em;
+	text-decoration: none;
+	font-weight: 900;
+	font-size: 1.25em;
+	background-color: @call-to-action-main;
+	color: #fff;
+
+	&:hover,
+	&:focus {
+		background: darken(@call-to-action-main, 15%);
+		color: #fff;
+	}
+}
+
+.btn-my-account {
+	display: block;
+	color: white !important;
+	padding: 4px 10px;
+	border-radius: 2px;
+	box-shadow: 0 3px 3px 0 rgba(0,0,0,0.25);
+	text-align: center;
+	text-decoration: none;
+	font-weight: 400;
+	background-color: @yellow-dark;
+	color: @yellow-dark;
+
+	&:hover,
+	&:focus {
+		background-color: lighten(@yellow-dark,8%);
+		color: #fff;
+	}
+}
+
+.navigation-bar-row {
+	width: 100%;
+	background: darken(@site-header-bg, 10%);
+}
+
+.navigation-bar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.navigation-bar-subcategories-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	padding: 10px 10px;
+	background: @yellow-dark;
+	color: @site-header-bg;
+	text-decoration: none;
+	&:hover {
+		color: @site-header-bg !important;
+	}
+}
+
+.show-subcategory-content {
+	display: block;
+}
+
+.hide-subcategory-content {
+	display: none;
+}
+
+.active-category {
+	background: @site-header-bg;
+	border-bottom: 7px solid @site-header-bg;
+}
+.my-account-button-wrapper{
+	margin-top:2px;
+}
+.btn-logout-link {
+	font-size: small;
+}
+// ------> Tablet <------ //
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+	.btn-my-account {
+		width: 86%;
+		padding: 0px 2px;
+	}
+
+	.btn-logout-link {
+		font-size: x-small;
+	}
+	.my-account-button-wrapper {
+		margin-top: 10px;
+	}
+	.navigation-bar-category-content-link {
+		margin-left: 5px;
+		margin-right: 5px;
+		font-weight: 500;
+	}
+}
+
+// ------> Mobile <------ //
+@media (max-width: @screen-xs-max) {
+		.navigation-bar-row {
+		display:none;
+	}
+	.my-account-button-wrapper{
+		display:none;
+	}
+}

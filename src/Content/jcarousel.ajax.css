@@ -1,0 +1,51 @@
+.jcarousel-wrapper {
+    height: 100px;
+    position: relative;
+}
+
+.jcarousel {
+    overflow: hidden;
+    margin: 0 40px;
+}
+
+    .jcarousel ul {
+        width: 20000em;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .jcarousel li {
+        float: left;
+        margin-right: 50px;
+    }
+
+    .jcarousel .loading {
+        text-align: center;
+        line-height: 90px; /* Fake vertical aligning */
+    }
+
+
+.jcarousel-control-prev {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.jcarousel-control-next {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+    .jcarousel-control-prev a,
+    .jcarousel-control-prev a:hover,
+    .jcarousel-control-prev a:active,
+    .jcarousel-control-prev a:link,
+    .jcarousel-control-next a,
+    .jcarousel-control-next a:hover,
+    .jcarousel-control-next a:active,
+    .jcarousel-control-next a:link {
+        text-decoration: none;
+    }

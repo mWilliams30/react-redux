@@ -1,0 +1,15 @@
+﻿.pagination-container {
+  line-height: 1;
+  font-size: 13px;
+}
+.pagination-container .pagination {
+  margin: 0;
+}
+.pagination-container .pagination a {
+  cursor: pointer;
+}
+.pagination-page-count {
+  font-size: 13px;
+  margin-top: 7px;
+}
+/*# sourceMappingURL=pagination.css.map */

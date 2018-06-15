@@ -1,0 +1,20 @@
+﻿#Errors p {
+  margin: 0;
+}
+#Errors .center-Tag {
+  text-align: center;
+}
+#Errors .title-header {
+  text-align: center;
+  font-size: 75px;
+  color: #1F5190;
+}
+#Errors .title-subheader {
+  text-align: center;
+  font-size: 60px;
+  color: #2EB1FF;
+}
+#Errors .error-image {
+  height: 300px;
+  width: 300px;
+}

@@ -1,0 +1,138 @@
+
+// =Slider
+// ------------------------------
+.slider {
+	overflow: hidden;
+}
+
+.slider > .container {
+	position: relative;
+}
+
+.slides-wrap-container {
+	overflow: visible !important; // Forces the container to show other elements.
+}
+
+.slides-wrap {
+	float: left;
+	position: relative;
+	overflow: visible;
+	width: 750px;
+}
+
+
+.slide {
+	position: relative;
+	white-space: normal;
+	width: 750px;
+}
+
+.slide img {
+	.img-responsive;
+}
+
+
+.slide .overlay {
+	background: @blue;
+	background: rgba(0,23,47,0.85);
+	bottom: 0;
+	padding: 10px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 335px;
+}
+
+
+.slide .widget-quote {
+	background: none;
+}
+
+.slide .widget-text {
+	position: absolute;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	margin-bottom: 0;
+}
+
+@mask-size: 1400px;
+
+.slide-mask {
+	background: rgba(22,32,46,0.9);
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f16202E,endColorstr=#7f16202E)";
+	bottom: 0;
+	position: absolute;
+	opacity: 0.9;
+	top: 0;
+	width: @mask-size;
+
+	&.start {
+		left: @mask-size * -1;
+	}
+
+	&.end {
+		right: @mask-size * -1;
+	}
+}
+
+
+
+
+
+
+
+.slider .hero-carousel-container article {
+	float: left;
+}
+
+.slider .hero-carousel-nav {
+	display: none;
+}
+
+
+
+
+
+// ----> Tablet <---- //
+@media (max-width: @screen-sm-max) {
+
+	.slider > .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.slides-wrap,
+	.slide {
+		width: 555px;
+	}
+
+	.slide .overlay {
+		width: 235px;
+	}
+
+	.slide .widget-quote {
+		padding: 15px 15px 15px 20px;
+	}
+
+	.slide .widget-text > p,
+	.slide .widget-quote > * {
+		font-size: 14px;
+		line-height: 1.3em;
+	}
+
+	.slide .widget-text {
+		padding: 10px;
+	}
+
+	.slider .widget-feature-instant {
+		right: 0;
+	}
+}
+
+
+// Links
+.slides-wrap article div.overlay div.widget p a:hover,
+.slides-wrap article div.overlay div.widget p a:hover {
+	color: @yellow-dark;
+}

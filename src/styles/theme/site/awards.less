@@ -1,0 +1,60 @@
+// =Awards
+// ------------------------------
+.award {
+    margin-bottom: 30px;
+}
+.award-title {
+    margin-bottom: 20px;
+}
+
+.award-brand img {
+    .img-responsive;
+}
+
+
+.award-year {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+.award-status {
+    color: #6d6d6d;
+    text-transform: uppercase;
+}
+
+.award-status-winner {
+    color: @yellow-dark;
+}
+
+
+.award-list {
+    border-bottom: 1px solid #3D4D67;
+    font-size: 14px;
+    padding: 0;
+    list-style: none;
+}
+
+.award-list li {
+    border-top: 1px solid #3D4D67;
+    border-bottom: 1px solid @blue-dark;
+    line-height: 1.4;
+    position: relative;
+    padding: 5px 40px 5px 0;
+
+    &:first-child { border-top: none; }
+}
+
+
+
+
+@media (max-width: @screen-xs-max)
+{
+    .award-title {
+        display: none;
+    }
+
+    .award-brand {
+        margin-bottom: 20px;
+    }
+}

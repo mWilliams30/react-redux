@@ -1,0 +1,413 @@
+﻿#GuideHomePage .body-container {
+	font-family: "AvenirNextCustom", Arial, sans-serif;
+}
+
+#GuideHomePage .seo-GreyBackground {
+	background-color: #f2f2f2;
+}
+
+#GuideHomePage .seo-BlueBackground {
+	background-color: #59d1ff;
+}
+
+#GuideHomePage .seo-LightBlueBackground {
+	background-color: #f2f8fa;
+}
+
+#GuideHomePage .Seo-margin-top {
+	margin-top: 5px;
+}
+
+#GuideHomePage .default-font {
+	color: #234397;
+}
+
+#GuideHomePage .h1-Tag {
+	font-size: 44px;
+}
+
+#GuideHomePage .h1-Tag-Mobile {
+	font-size: 30px;
+	padding: 10px;
+}
+
+#GuideHomePage .h3-Tag {
+	font-size: 20px;
+}
+
+#GuideHomePage .h3-Tag-Mobile {
+	font-size: 15px;
+	padding: 10px;
+}
+
+#GuideHomePage .seo-ListWithNoBulletPoints {
+	list-style: none;
+	padding: 0;
+}
+
+#GuideHomePage .seo-HeaderPadding {
+	padding: 10px 0 0 0;
+}
+
+#GuideHomePage .navigationBarXLarge {
+	font-size: 18px;
+	text-align: right;
+}
+
+#GuideHomePage .navigationBarLarge {
+	width: 65%;
+	float: right;
+	font-size: 15px;
+	text-align: right;
+}
+
+#GuideHomePage .navigationBarSmall {
+	width: 100%;
+	font-size: 13px;
+	text-align: center;
+}
+
+#GuideHomePage .float-right {
+	float: right;
+}
+
+#GuideHomePage .float-left {
+	float: left;
+}
+
+#GuideHomePage .white-Font {
+	color: #ffffff;
+}
+
+#GuideHomePage .a-text-decoration {
+	text-decoration: underline;
+}
+
+#GuideHomePage .center-Tag {
+	text-align: center;
+}
+
+#GuideHomePage .seo-hero-ProductLayout {
+	margin-top: 10px;
+	height: 365px;
+	background: #234397;
+	/* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#2A2F83, #0062AD);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#2A2F83, #0062AD);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2A2F83, #0062AD);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2A2F83, #0062AD);
+	/* Standard syntax (must be last) */
+}
+
+#GuideHomePage .seo-hero-ProductLayout-Mobile {
+	margin-top: 10px;
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background: #234397;
+	/* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#2A2F83, #0062AD);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#2A2F83, #0062AD);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2A2F83, #0062AD);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2A2F83, #0062AD);
+	/* Standard syntax (must be last) */
+}
+
+#GuideHomePage .seo-hero-Content {
+	height: 400px;
+	background-color: navy;
+}
+
+#GuideHomePage .seo-HeroTrustPilot {
+	height: 102px;
+	overflow: hidden;
+}
+
+#GuideHomePage .seo-Iframe-TrustPilot-5Star {
+	height: 100px;
+	width: 90%;
+	border-style: none;
+	display: block;
+	overflow: hidden;
+}
+
+#GuideHomePage .seo-Hero-TrustPilotContrainer {
+	margin-top: 40px;
+}
+
+#GuideHomePage .seo-hero-Text-Allign-Center {
+	padding-top: 50px;
+	text-align: center;
+}
+
+#GuideHomePage .seo-Hero-get-A-Quote-Button-Large {
+	width: 300px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+#GuideHomePage .seo-Hero-get-A-Quote-Button-font-Large {
+	font-size: 25px;
+}
+
+#GuideHomePage .seo-Hero-get-A-Quote-Button-font-small {
+	font-size: 12px;
+}
+
+#GuideHomePage .seo-Hero-get-A-Quote-Button-Time {
+	font-size: 13px;
+	line-height: 150%;
+}
+
+#GuideHomePage .seo-Hero-get-A-Quote-Button-chevron {
+	font-size: 40px;
+	top: 10px;
+	position: relative;
+}
+
+#GuideHomePage .set-Hero-BulletpointCotainer {
+	height: 256px;
+}
+
+#GuideHomePage .seo-BulletPointPaddingNone {
+	padding-left: 25px;
+}
+
+#GuideHomePage .seo-hero-ProductImage {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 256px;
+	margin-top: -37px;
+}
+
+#GuideHomePage .seo-TrustedPartners {
+	height: 67px;
+	margin-top: -20px;
+}
+
+#GuideHomePage .seo-TrustedPartners-img {
+	height: 100%;
+	width: 100%;
+}
+
+#GuideHomePage .seo-TrustedPartners-img-Mobile {
+	height: 50%;
+	width: 100%;
+}
+
+#GuideHomePage .seo-TrustedPartners-Xs {
+	margin-top: 20px;
+}
+
+#GuideHomePage .trusted-Partners-title {
+	padding-left: 7px;
+	padding-top: 4px;
+}
+
+#GuideHomePage .trusted-Partners-title-Mobile {
+	height: 16px;
+}
+
+#GuideHomePage .trusted-partners-images {
+	display: table;
+	width: 100%;
+}
+
+	#GuideHomePage .trusted-partners-images a {
+		display: table-cell;
+		text-align: center;
+		width: 16%;
+	}
+
+	#GuideHomePage .trusted-partners-images img {
+		width: 100%;
+		max-width: 100px;
+		margin-left: 35px;
+	}
+
+#GuideHomePage .container-NoWidth {
+	height: auto;
+	width: 100%;
+}
+
+#GuideHomePage #SeoProductBoxContainer {
+	height: 130px;
+	background-color: #ffffff;
+	border: 1px solid #f2f2f2;
+	border-radius: 5px 5px 5px 5px;
+	margin-top: 10px;
+	overflow: hidden;
+	box-shadow: 2px 2px 2px #C7C7C7;
+}
+
+#GuideHomePage .seo-ProductFourBoxs1 {
+	height: 150px;
+	background-color: red;
+}
+
+#GuideHomePage .seo-ProductFourBoxs2 {
+	height: 150px;
+	background-color: aqua;
+}
+
+#GuideHomePage .seo-ProductFourBoxs3 {
+	height: 150px;
+	background-color: purple;
+}
+
+#GuideHomePage .seo-ProductFourBoxs4 {
+	height: 150px;
+	background-color: black;
+}
+
+#GuideHomePage .seo-ProductFourBoxs5 {
+	height: 150px;
+	background-color: green;
+}
+
+#GuideHomePage .seo-TrustPilotWrapper {
+	margin-top: 12px;
+	height: 190px;
+	background-color: #FFFFFF;
+	border: 1px solid #f2f2f2;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 2px 2px 2px #C7C7C7;
+}
+
+#GuideHomePage .seo-TrustPilotWrapper-Mobile {
+	margin-top: 12px;
+	height: auto;
+	min-height: 200px;
+	background-color: #FFFFFF;
+	border: 1px solid #f2f2f2;
+	border-radius: 5px 5px 5px 5px;
+}
+
+#GuideHomePage .seo-TrustPilotWidget {
+	height: auto;
+	width: 100%;
+	border-style: none;
+	display: block;
+}
+
+#GuideHomePage .seo-TrustPilotWidget-Mobile {
+	width: 100%;
+	border-style: none;
+	display: block;
+}
+
+#GuideHomePage .seo-contentBar-HowCanWeHelp-Mobile {
+	min-height: 45px;
+	max-height: 70px;
+	border-radius: 5px 5px 0px 0px;
+	background: #234397;
+	/* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#2A2F83, #0062AD);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#2A2F83, #0062AD);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2A2F83, #0062AD);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2A2F83, #0062AD);
+	/* Standard syntax (must be last) */
+}
+
+#GuideHomePage .seo-contentBar-HowCanWeHelp {
+	height: 45px;
+	margin-top: 10px;
+	border-radius: 5px 5px 0px 0px;
+	background: #234397;
+	/* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#2A2F83, #0062AD);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#2A2F83, #0062AD);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2A2F83, #0062AD);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2A2F83, #0062AD);
+	/* Standard syntax (must be last) */
+}
+
+#GuideHomePage .seo-contentBar {
+	height: 45px;
+	margin-top: 10px;
+	border-radius: 5px 5px 0px 0px;
+	background: #234397;
+	/* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#2A2F83, #0062AD);
+	/* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#2A2F83, #0062AD);
+	/* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#2A2F83, #0062AD);
+	/* For Firefox 3.6 to 15 */
+	background: linear-gradient(#2A2F83, #0062AD);
+	/* Standard syntax (must be last) */
+}
+
+#GuideHomePage .seo-ProductContentAreaText {
+	min-height: 300px;
+	padding: 10px;
+	height: auto;
+	background-color: #FFFFFF;
+	border-radius: 0px 0px 5px 5px;
+	margin-bottom: 20px;
+}
+
+#GuideHomePage .seo-FlixelIframe {
+	height: 280px;
+	margin: 10px;
+}
+
+#GuideHomePage .seo-ProductContentRelatedAreas {
+	height: auto;
+	min-height: 420px;
+	background-color: #ffffff;
+	border-radius: 0px 0px 10px 10px;
+}
+
+#GuideHomePage .seo-ProductContentRelatedArticlesBottom {
+	height: auto;
+	background-color: #f2f8fa;
+}
+
+#GuideHomePage .seo-Hero-get-A-Quote-Button-Small {
+	width: 85%;
+	border-radius: 10px 10px 10px 10px;
+	height: 60px;
+}
+
+#GuideHomePage .seo-Hero-get-A-Quote-Button-font-Small {
+	font-size: 15px;
+	top: 0;
+}
+
+#GuideHomePage .seo-Hero-get-A-Quote-Button-chevron-Small {
+	font-size: 28px;
+	top: 7px;
+	position: relative;
+}
+
+#GuideHomePage .btn-hero-landing {
+	background: #63b929;
+	background: -webkit-linear-gradient(#63b929, #4aa010);
+	background: -o-linear-gradient(#63b929, #4aa010);
+	background: -moz-linear-gradient(#63b929, #4aa010);
+	background: linear-gradient(#63b929, #4aa010);
+	border-radius: 5px;
+	padding: 4px 48px;
+	font-size: 23px;
+	color: #fff;
+	text-transform: none;
+	border: 1px solid #5eb424;
+	box-shadow: 2px 2px 4px #1c367b;
+}
+
+#GuideHomePage .chevron-margin-top {
+	top: 4px;
+}

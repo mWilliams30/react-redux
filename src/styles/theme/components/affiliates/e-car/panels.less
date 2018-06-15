@@ -1,0 +1,249 @@
+.panel-default {
+	background: @blue;
+	box-shadow: none;
+	border-width: 2px;
+	color: #FFF;
+}
+
+.panel-inverse {
+	background: #fff;
+	border: 2px solid @blue-light;
+	padding: 20px;
+	margin: 0 0 25px;
+
+	label {
+		color: #4B5F81;
+	}
+
+	.inverse {
+		color: @blue;
+	}
+
+	.form-group {
+		margin-bottom: 25px;
+	}
+}
+
+.panel-quote-reference {
+	.panel-variant(#FFF, #FFF, @blue-lighter, #FFF);
+	margin-bottom: 0;
+	text-align: left;
+
+	.panel-heading {
+		border-width: 2px 0 0;
+		border-style: solid;
+		color: @text-color;
+		padding: 10px 15px !important;
+	}
+
+	.panel-body {
+		font-size: 16px;
+		padding: 10px 15px;
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+	.panel-quote-reference {
+		margin-bottom: 25px;
+
+		&,
+		.panel-body {
+			font-size: 14px;
+		}
+	}
+}
+
+
+.panel-policy-duration {
+	border-color: @yellow-dark;
+	margin-top: 29px;
+
+	@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+		margin-bottom: 0;
+	}
+
+	.panel-body {
+		padding: 10px 15px;
+	}
+}
+
+
+
+.panel-confirm-details {
+	.form-actions {
+		text-align: right;
+
+		.amend-details-link {
+			color: #B2BC00;
+			font-size: 14px;
+			text-decoration: underline;
+		}
+
+		.btn-primary {
+			margin-left: 15px;
+
+			@media (min-width: @screen-md) {
+				.btn-lg;
+			}
+
+			@media (max-width: @screen-sm-max) {
+				margin-left: 5px;
+			}
+		}
+	}
+}
+
+.declaration-text-fraud-panel-wrapper {
+	margin-top: 70px;
+	margin-bottom: 70px;
+
+	.declaration-text-fraud-panel {
+		padding: 10px;
+		font-style: italic;
+		font-size: 13px;
+	}
+}
+
+.admin-panel {
+	label {
+		color: #fff;
+	}
+
+	.glyphicon {
+		top: -3px;
+	}
+
+	button .glyphicon {
+		top: 0;
+	}
+}
+
+.panel-body-bottom-border {
+	border-bottom: 2px solid #fff;
+}
+
+.panel {
+	margin-bottom: 20px;
+
+	.panel-heading {
+		font-weight: bold;
+		background-color: @blue;
+		border-bottom: 0;
+		padding: 10px 15px 0 15px;
+
+		.panel-edit-link {
+			line-height: 1;
+			font-size: 22px;
+			margin-top: 1px;
+			display: none;
+			color: @call-to-action-main;
+		}
+
+		.panel-title {
+			font-size: 22px;
+
+			span.glyphicon {
+				font-size: 19px;
+			}
+
+			span.hidden-xs {
+				font-size: 22px;
+			}
+		}
+
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+		}
+	}
+
+	.panel-heading-disabled {
+		color: @gray-light;
+		font-weight: bold;
+		padding-bottom: 10px;
+
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+		}
+	}
+
+	.panel-body {
+		position: relative;
+
+		a.btn-call-to-action {
+			color: #fff;
+			padding: 0 15px 1px 15px;
+			font-size: 20px;
+			float: right;
+			margin-right: 15px;
+
+			@media (max-width: @screen-sm-max) {
+				padding: 0 10px;
+				margin-right: 5px;
+			}
+		}
+
+		#CompareQuotes {
+			margin-right: 10px;
+		}
+	}
+
+	.panel-footer {
+		text-align: right;
+
+		a.btn-call-to-action {
+			color: #fff;
+			padding: 0 15px;
+			font-size: 20px;
+		}
+	}
+}
+
+.panel-group-policy-confirmation-documents {
+	.panel {
+		.panel-heading {
+			background-color: @blue-lighter;
+			padding: 10px 15px;
+
+			.panel-title {
+				font-size: 18px !important;
+				font-weight: normal !important;
+			}
+		}
+	}
+}
+
+#BasicDetailsContainer {
+	.panel {
+		.panel-heading {
+			color: #fff;
+
+			.panel-title {
+				span.glyphicon {
+					font-size: 19px;
+				}
+
+				span.hidden-xs {
+					font-size: 22px;
+				}
+			}
+		}
+
+		.panel-heading-disabled {
+			color: @gray-dark;
+		}
+
+		.panel-heading-success {
+		h3 {
+			color: @green;
+
+			span.glyphicon {
+				margin-right: 10px;
+			}
+		}
+	}
+
+		.control-label {
+			color: @yellow-dark;
+		}
+	}
+}

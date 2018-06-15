@@ -1,0 +1,217 @@
+﻿#LandingExitPage {
+  /*block-li to display text next to glyphicon for mobile*/
+  /*block-li-l to display text next to glyphicon for large resolutions*/
+}
+#LandingExitPage .borderpanel {
+  border: 2px solid #778899;
+}
+#LandingExitPage .padding-space-top {
+  padding-top: 10px;
+}
+#LandingExitPage .padding-space-top-l {
+  padding-top: 50px;
+}
+#LandingExitPage .padding-space-left {
+  padding-left: 35px;
+}
+#LandingExitPage .padding-space-left-minus-top {
+  padding-left: 55px;
+  line-height: 1%;
+}
+#LandingExitPage .margin-space-left {
+  margin-left: 15px;
+}
+#LandingExitPage .padding-space-right {
+  padding-right: 10px;
+}
+#LandingExitPage .line-spacing {
+  line-height: 10%;
+}
+#LandingExitPage .margin-top {
+  margin-top: -50px;
+}
+#LandingExitPage .margin-top-l {
+  margin-top: -80px;
+}
+#LandingExitPage .margin-top-s {
+  margin-top: -20px;
+}
+#LandingExitPage .block-li {
+  margin-top: -70px;
+  padding-left: 70px;
+}
+#LandingExitPage .block-tap-content {
+  margin-top: -50px;
+  padding-left: 65px;
+}
+#LandingExitPage .block-li-col-l {
+  margin-top: -35px;
+  padding-left: 35px;
+  line-height: 200%;
+}
+#LandingExitPage .Button-Select {
+  text-align: center;
+  height: 80px;
+  width: 280px;
+  font-weight: 900;
+  -moz-box-shadow: inset 0px 1px 0px 0px #f29c93;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #f29c93;
+  box-shadow: inset 0px 1px 0px 0px #f29c93;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+  background: -moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background: -webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background: -o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background: -ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100', GradientType=0);
+  background-color: #fe1a00;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #d83526;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+}
+#LandingExitPage .Button-Select:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
+  background: -moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+  background: -webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+  background: -o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+  background: -ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+  background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00', GradientType=0);
+  background-color: #ce0100;
+}
+#LandingExitPage .Button-Select:active {
+  position: relative;
+  top: 1px;
+}
+#LandingExitPage .Button-GetQuote {
+  text-align: center;
+  margin-left: 5px;
+  height: 40px;
+  width: 140px;
+  font-weight: 700;
+  -moz-box-shadow: inset 0px 1px 0px 0px #f29c93;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #f29c93;
+  box-shadow: inset 0px 1px 0px 0px #f29c93;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fe1a00), color-stop(1, #ce0100));
+  background: -moz-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background: -webkit-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background: -o-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background: -ms-linear-gradient(top, #fe1a00 5%, #ce0100 100%);
+  background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fe1a00', endColorstr='#ce0100', GradientType=0);
+  background-color: #fe1a00;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid #d83526;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #b23e35;
+}
+#LandingExitPage .Button-GetQuote:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ce0100), color-stop(1, #fe1a00));
+  background: -moz-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+  background: -webkit-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+  background: -o-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+  background: -ms-linear-gradient(top, #ce0100 5%, #fe1a00 100%);
+  background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ce0100', endColorstr='#fe1a00', GradientType=0);
+  background-color: #ce0100;
+}
+#LandingExitPage .Button-GetQuote:active {
+  position: relative;
+  top: 1px;
+}
+#LandingExitPage .li {
+  font-size: 40px;
+}
+#LandingExitPage #Col-Why-TempCover {
+  font-size: 16px;
+}
+#LandingExitPage .margin-space-top-small {
+  margin-top: -15px;
+}
+#LandingExitPage .default-font {
+  font-family: "AvenirNextCustom";
+}
+#LandingExitPage .Quote {
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 80%;
+  height: 110px;
+}
+#LandingExitPage .TrustPilotNav {
+  width: 100%;
+  height: 50px;
+}
+#LandingExitPage button:focus {
+  outline: 0;
+}
+#LandingExitPage .ul-why-us {
+  margin-top: -35px;
+  padding-left: 30px;
+}
+#LandingExitPage nav {
+  background: #FFF;
+  float: left;
+  z-index: 9;
+}
+#LandingExitPage nav ul {
+  text-align: center;
+  z-index: 9;
+}
+#LandingExitPage nav ul li {
+  float: left;
+  display: inline;
+}
+#LandingExitPage nav ul li:hover {
+  /*Code here for background of hover for nav menu*/
+}
+#LandingExitPage nav ul li a {
+  display: block;
+  padding: 45px 25px;
+  color: #444;
+}
+#LandingExitPage nav ul li ul {
+  position: absolute;
+  width: 110px;
+  margin-top: 30px;
+  margin-left: -130px;
+}
+#LandingExitPage nav ul li ul li {
+  margin: 0;
+  padding: 0;
+  background: #F7F7F7;
+}
+#LandingExitPage nav ul li ul li a {
+  display: block;
+  padding: 15px 10px;
+  color: #444;
+  background: #f2f2f2;
+}
+#LandingExitPage nav ul li ul li:hover a {
+  background: #add8e6;
+}
+#LandingExitPage nav ul li ul.fallback {
+  display: none;
+}
+#LandingExitPage nav ul li:hover ul.fallback {
+  display: block;
+}
+/*# sourceMappingURL=landing-exit-pages.css.map */

@@ -1,0 +1,788 @@
+﻿#AffiliateNotificationWrapper {
+	.affiliate-notification-author,
+	.affiliate-notification-datestamp {
+		font-size: 12px;
+		float: right;
+		margin-left: 10px;
+	}
+}
+
+
+#MyAccountContainer {
+
+	@registration_plate_letter_color: #000;
+	@registration_plate_letter_background_color: #f5ca2e;
+	@registration_plate_black_and_while_letter_background_color: #fff;
+	@registration_plate_eu_gb_text_color: #f5ca2e;
+	@registration_plate_eu_gb_background_color: #063298;
+	@my_account_placeholder_color: #333;
+	@my_account_placeholder_disabled_color: #000;
+	@registration_plate_font_family: monospace;
+	@tab_nav_active_background_color: #eee;
+	@pills_nav_background_color: #2D55C1;
+	@pill_nav_active_background_color: #19a4e0;
+	@panel_background_color: #fff;
+	@call_to_action_label_color: white;
+	@vehicle_to_be_removed_selected_background_color: lightsalmon;
+	@vehicle_being_removed_background_color: coral;
+	@horizontal_rule_colour: #333;
+
+	/* 
+	simple display: none  hide class without !important as bs class 'hide' can't 
+	be un-hidden by jquery.show()
+	*/
+	.jq-hidden {
+		display: none;
+	}
+	/* Input Placeholder colour overrides to match select/options normal and [disabled] colours*/
+	/* WebKit, Blink, Edge */
+	/* Mozilla Firefox 4 to 18 */
+	/* Mozilla Firefox 19+ */
+	/* Internet Explorer 10-11 */
+	/* Microsoft Edge */
+	.form-control {
+		&::-webkit-input-placeholder {
+			color: @my_account_placeholder_color;
+		}
+
+		&:-moz-placeholder {
+			color: @my_account_placeholder_color;
+		}
+
+		&::-moz-placeholder {
+			color: @my_account_placeholder_color;
+		}
+
+		&:-ms-input-placeholder {
+			color: @my_account_placeholder_color;
+		}
+
+		&::-ms-input-placeholder {
+			color: @my_account_placeholder_color;
+		}
+	}
+
+	.form-control[disabled] {
+		&::-webkit-input-placeholder {
+			color: @my_account_placeholder_disabled_color;
+		}
+
+		&:-moz-placeholder {
+			color: @my_account_placeholder_disabled_color;
+		}
+
+		&::-moz-placeholder {
+			color: @my_account_placeholder_disabled_color;
+		}
+
+		&:-ms-input-placeholder {
+			color: @my_account_placeholder_disabled_color;
+		}
+
+		&::-ms-input-placeholder {
+			color: @my_account_placeholder_disabled_color;
+		}
+	}
+
+	.btn-call-to-action {
+		color: @call_to_action_label_color;
+	}
+
+	#MyAccountTabNav.nav-tabs {
+		border-bottom: none;
+
+		> li {
+			margin-bottom: -2px;
+
+			&:last-child > a {
+				margin-right: 0;
+			}
+
+			> a {
+				cursor: pointer;
+
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+
+		> li.active {
+			> a {
+				background-color: @tab_nav_active_background_color !important;
+				border: none;
+
+				&:hover {
+					background-color: @tab_nav_active_background_color !important;
+				}
+			}
+		}
+	}
+
+
+	.my-account-tab-nav-container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	ul.equal-distribution-three-tabs {
+		width: 100%;
+
+		> li {
+			width: 33.33%;
+			padding-left: 0;
+			padding-right: 0;
+			text-align: center;
+		}
+	}
+
+	.my-account-nav {
+		&.nav-pills {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		&.nav-justified {
+			li {
+				padding-left: 40px;
+				padding-right: 40px;
+			}
+
+			> li {
+				> a {
+					text-decoration: none;
+
+					&:hover {
+						background-color: @pills_nav_background_color;
+						color: #fff;
+					}
+				}
+
+				&:active {
+					> a {
+						&:hover {
+							background-color: @pill_nav_active_background_color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.my-account-content {
+		&.tab-content {
+			padding: 0;
+			border-top: none;
+
+			> .tab-pane.active {
+				background-color: @tab_nav_active_background_color !important;
+				padding: 15px;
+			}
+
+			.btn {
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+
+			.reg {
+				text-transform: uppercase;
+			}
+		}
+
+		div.panel {
+			position: relative;
+			padding: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	#YourPolicies {
+
+		@media (min-width: @screen-md) {
+			font-size: .8em;
+		}
+
+		@media (max-width: @screen-xs) and (max-width: @screen-sm) {
+			.page-count .pagination-container {
+				font-size: 0.7em;
+			}
+		}
+
+		.wrap-text {
+			word-break: break-all;
+		}
+
+		.policy-title {
+			font-weight: bold;
+			color: @yellow-dark;
+		}
+
+
+		.policy-type {
+			color: @yellow-dark;
+			text-align: left;
+
+			.glyphicon {
+				text-align: left;
+			}
+		}
+
+		.show-documents {
+			.btn {
+				font-size: 0.9em;
+			}
+		}
+	}
+
+
+	#DetailsYourGarage {
+
+		.vehicle-container-to-be-removed {
+			background-color: @vehicle_to_be_removed_selected_background_color !important;
+		}
+
+		.vehicle-container-being-removed {
+			background-color: @vehicle_being_removed_background_color !important;
+		}
+
+		.add-manual-build-vehicle {
+			text-align: right;
+		}
+
+		.vehicle-panel {
+			.no-vehicles-saved {
+				text-align: center;
+				line-height: 70px;
+			}
+
+			.vehicle-type {
+				text-align: center;
+				line-height: 70px;
+
+				span {
+					vertical-align: middle;
+				}
+			}
+
+			.add-vehicle {
+				line-height: 70px;
+				display: inline;
+				padding-left: 10px;
+			}
+
+			.vehicle-description {
+				font-size: 13px;
+				padding-left: 10px;
+			}
+		}
+
+		input#VehicleSearchByRegSaveButton {
+			background: @btn-account-vehicle-reg-save;
+			margin-right: 5px;
+
+			&:hover {
+				background: @btn-account-vehicle-reg-save-hover;
+			}
+		}
+
+		input#VehicleSearchByRegSearchButton {
+			background-color: @pill_nav_active_background_color;
+			margin-right: 5px;
+		}
+
+		input#AddManualBuildVehicle {
+			font-size: 13px;
+			width: 110px;
+		}
+
+		#VehicleBuilderRegistrationSearcher {
+			.has-feedback {
+				margin-bottom: 5px;
+
+				.form-control-wrap {
+					padding-right: 0;
+				}
+
+				a#ChangeRegistrationNumber {
+					font-size: 13px;
+					cursor: pointer;
+				}
+			}
+
+			span.form-control-feedback {
+				&.glyphicon-remove {
+					position: relative !important;
+					top: 0 !important;
+					float: right !important;
+					display: none;
+				}
+
+				&.glyphicon-ok {
+					position: relative !important;
+					top: 0 !important;
+					float: right !important;
+					display: none;
+				}
+			}
+
+			span.field-validation-error {
+				display: block;
+				margin-left: 5px;
+			}
+		}
+
+		.vehicle-reg-plate-container {
+			margin-left: 5px;
+			padding-right: 0;
+			display: inline-block;
+
+			.vehicle-reg-plate-eu-gb {
+				border-bottom-left-radius: 4px;
+				border-top-left-radius: 4px;
+				background-color: @registration_plate_eu_gb_background_color;
+				color: @registration_plate_letter_color;
+				font-weight: bold;
+				text-align: center;
+				margin-bottom: 2px;
+				line-height: 20px;
+				float: left;
+				max-width: 20px;
+				color: @registration_plate_eu_gb_text_color;
+				cursor: default;
+
+				.eu {
+					font-size: 18px;
+					font-weight: lighter;
+					min-width: 20px;
+				}
+
+				.gb {
+					font-size: 8px;
+					min-width: 20px;
+				}
+			}
+
+			div.vehicle-reg-plate-reg {
+				cursor: default;
+			}
+
+			.vehicle-reg-plate-reg {
+				border-bottom-right-radius: 4px;
+				border-top-right-radius: 4px;
+				background-color: @registration_plate_letter_background_color;
+				color: @registration_plate_letter_color;
+				font-size: 20px;
+				font-weight: bold;
+				font-family: @registration_plate_font_family;
+				text-align: center;
+				margin-bottom: 2px;
+				width: 120px;
+				padding-top: 2px;
+				display: inline-block;
+				text-transform: uppercase;
+				line-height: 37px;
+			}
+
+			.vehicle-reg-black-and-white {
+				background-color: @registration_plate_black_and_while_letter_background_color;
+				border-left: none;
+				cursor: default;
+				line-height: 35px;
+				width: 140px;
+				border-radius: 0;
+			}
+		}
+
+		.vehicle-reg-search {
+			.vehicle-reg-input {
+				border: none;
+			}
+		}
+
+		.vehicle-reg-and-action-buttons {
+			position: static;
+			margin-top: 4px;
+
+			.vehicle-action {
+				position: absolute;
+				right: 0;
+				bottom: 50%;
+				transform: translateY(50%);
+				padding-left: 0px;
+				display: inline-block;
+				text-align: right;
+
+				.btn {
+					width: 138px !important;
+					box-shadow: none;
+					margin-bottom: 2px;
+					font-size: 13px;
+				}
+
+				.vehicle-new-quote {
+					width: 110px !important;
+				}
+
+				.vehicle-remove {
+					vertical-align: middle;
+					font-size: 20px;
+					padding-right: 5px;
+					padding-left: 5px;
+
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+
+	#MyAccountNewQuote {
+		&.my-account-marketing-area {
+			text-align: center;
+
+			.btn {
+				background-color: @move-forward-button-colour;
+				padding: 7px 30px;
+				margin-top: 34px;
+				border: none;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+
+				&:hover {
+					background-color: @move-forward-button-colour-dark;
+				}
+			}
+		}
+	}
+
+	#YourSettings {
+		#SettingsSignInDetails {
+			#ChangeEmailAddress {
+				margin-bottom: 4px;
+				float: right;
+				margin-right: 5px;
+			}
+
+			#ChangePassword {
+				float: right;
+				margin-right: 5px;
+			}
+
+			#EditEmailSignInDetails,
+			#EditPasswordSignInDetails {
+				min-height: 180px;
+
+				hr {
+					margin-top: 10px;
+					border-color: @horizontal_rule_colour;
+				}
+			}
+
+			#EditSignInDetailsModal {
+				.modal-body {
+					padding-bottom: 0px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+    #MyAccountContainer {
+        font-size: 14px;
+        padding: 5px;
+
+        .my-account-nav {
+            &.nav-pills {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            &.nav-justified {
+                li {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+            }
+        }
+
+        .my-account-content {
+            &.tab-content {
+                > .tab-pane.active {
+                    padding: 5px;
+                }
+            }
+
+            div.panel {
+                padding: 5px;
+            }
+        }
+
+        .nav {
+            > li {
+                > a {
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+            }
+        }
+
+        .nav-pills {
+            > li {
+                & + li {
+                    margin-left: 0px;
+                }
+            }
+        }
+
+        #DetailsYourGarage {
+            div#VehicleBuilderManualBuild {
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+
+            .vehicle-panel {
+                .vehicle-type {
+                    line-height: 30px;
+                    padding-bottom: 10px;
+                }
+
+                .add-vehicle {
+                    line-height: 40px;
+                    text-align: center;
+                    display: block;
+                }
+
+                .vehicle-description {
+                    font-size: 13px;
+                    text-align: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+
+            #VehicleBuilderRegistrationSearcher {
+                span.field-validation-error {
+                    font-size: 13px;
+                }
+            }
+
+            .vehicle-reg-and-action-buttons {
+                .vehicle-action {
+                    position: static;
+                    float: right;
+                    transform: none;
+                }
+            }
+        }
+
+        #YourSettings {
+            #SettingsSignInDetails {
+                #ChangeEmailAddress {
+                    margin-top: -20px;
+                }
+
+                #ChangePassword {
+                    margin-top: -20px;
+                }
+            }
+
+            #SettingsContactingYou {
+                .col-xs-14.col-md-14 {
+                    clear: left;
+
+                    .col-xs-10 {
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+    #EditAboutYouDetailsForm {
+        .form-group {
+            margin-bottom: 0;
+        }
+        .date-of-birth-form-control-wrap,
+        .date-test-passed-form-control-wrap {
+            select {
+                margin-right: 5px;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+	#MyAccountContainer {
+		.my-account-nav {
+			&.nav-pills {
+				padding-top: 15px;
+				padding-bottom: 15px;
+			}
+
+			&.nav-justified {
+				li {
+					padding-left: 30px;
+					padding-right: 30px;
+				}
+			}
+		}
+
+		.my-account-content {
+			&.tab-content {
+				> .tab-pane.active {
+					padding: 10px;
+				}
+			}
+
+			&div.panel {
+				padding: 10px;
+			}
+		}
+
+		.nav {
+			> li {
+				> a {
+					padding: 10px 10px;
+				}
+			}
+		}
+
+		.nav-pills {
+			> li {
+				& + li {
+					margin-left: 0px;
+				}
+			}
+		}
+
+		#DetailsYourGarage {
+			.vehicle-panel {
+				.add-vehicle {
+					line-height: 70px;
+					display: block;
+				}
+			}
+		}
+
+		#YourSettings {
+			#SettingsSignInDetails {
+				#ChangeEmailAddress {
+					margin-top: -20px;
+				}
+
+				#ChangePassword {
+					margin-top: -20px;
+				}
+			}
+		}
+	}
+}
+
+#EditDetailsModal {
+
+    @media (min-width: @screen-md) {
+        .modal-dialog {
+            width: 70%;
+        }
+    }
+
+    @media (min-width: @screen-lg) {
+        .modal-dialog {
+            width: 950px;
+        }
+    }
+}
+
+#EditAboutYouDetailsForm {
+
+	.date-of-birth-form-control-wrap {
+		#DateOfBirthDay {
+			width: 78px;
+		}
+
+		#DateOfBirthMonth {
+			width: 132px;
+		}
+
+		#DateOfBirthYear {
+			width: 86px;
+		}
+	}
+
+	.date-test-passed-form-control-wrap {
+
+		#DateTestPassedMonth {
+			width: 132px;
+		}
+
+		#DateTestPassedYear {
+			width: 86px;
+		}
+	}
+
+	@media (min-width: @screen-sm) {
+		.date-of-birth-form-control-wrap {
+
+			#DateOfBirthYear {
+				margin-left: 10px;
+			}
+		}
+
+		.date-test-passed-form-control-wrap {
+
+			#DateTestPassedYear {
+				margin-left: 10px;
+			}
+		}
+	}
+}
+
+#PostcodeLookup {
+
+	#Postcode {
+		text-transform: uppercase;
+	}
+}
+
+.search-results-container {
+    height: 220px;
+    overflow-y: auto;
+    z-index: 999;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2)inset;
+    background-color: #fff;
+    position: relative;
+    margin-top: 5px;
+
+    ul {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 10px;
+
+        li {
+            padding: 5px 10px;
+            border-bottom: 1px solid #efefef;
+            cursor: pointer;
+
+            &:hover {
+                background-color: ivory;
+            }
+
+            span {
+                line-height: 1.2em;
+            }
+        }
+    }
+}
+
+
+@media (min-width: @screen-lg) {
+	.search-results-container {
+		height: 370px;
+	}
+}

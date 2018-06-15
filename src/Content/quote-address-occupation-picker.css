@@ -1,0 +1,19 @@
+﻿#AddressSearchNoResultsMessage, #OccupationSearchNoResultsMessage {
+	display: none;
+	margin-top: 10px;
+}
+
+.panel label {
+	color: #333;
+	font-weight: normal;
+}
+
+.panel-footer div label {
+	margin-top: 5px;
+}
+
+.panel-footer div.alert {
+	display: none;
+	margin-top: 12px;
+	margin-bottom: 0;
+}

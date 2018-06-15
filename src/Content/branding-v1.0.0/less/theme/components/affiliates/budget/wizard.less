@@ -1,0 +1,173 @@
+// =Wizards
+// ------------------------------
+.wizard {
+	.clearfix;
+	font-size: 14px;
+	list-style-type: none;
+	margin: @grid-gutter-width -@grid-gutter-width / 2;
+	overflow: hidden;
+	padding: 0;
+}
+
+.wizard > li {
+	float: left;
+	position: relative;
+	width: 20%;
+}
+
+.wizard > li > span {
+	background: #fff;
+	color: #333;
+	display: block;
+	font-weight: 700;
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+// ----> Arrow Heads <---- //
+.wizard > li > span:after,
+.wizard > li > span:before {
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid transparent;
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	right: 0;
+	z-index: 2;
+}
+
+.wizard > li > span:before {
+	border-top-color: @wizard-bg-base;
+	border-bottom-color: @wizard-bg-base;
+	border-left-color: @blue-darkest;
+	left: -25px;
+	right: auto;
+	z-index: 1;
+	transform: rotate(360deg);
+}
+
+.wizard > li > span:after {
+	border-left-color: @wizard-bg-base;
+	transform: rotate(360deg);
+}
+
+
+// ----> First & Last Children <---- //
+.wizard > li:first-child > span:before {
+	content: none;
+}
+
+.wizard > li:last-child > span:after {
+	border-top-color: @body-bg;
+	border-bottom-color: @body-bg;
+}
+
+
+
+// ----> Completed <---- //
+.wizard > li.completed > span {
+	background: @wizard-bg-completed;
+	color: @wizard-color-completed;
+	text-shadow: 0px 1px 3px rgba(0,0,0,0.32);
+
+	&:before { border-top-color: @wizard-bg-completed; border-bottom-color: @wizard-bg-completed; transform: rotate(360deg);}
+	&:after { border-left-color: @wizard-bg-completed }
+}
+
+// ----> Current <---- //
+.wizard > li.current > span {
+	background: @wizard-bg-current;
+	color: @wizard-color-current;
+	a {
+		color:#fff;
+	}
+	text-shadow: 0px 1px 3px rgba(0,0,0,0.32);
+	
+	.badge { text-shadow: none; }
+
+	&:before { border-top-color: @wizard-bg-current; border-bottom-color: @wizard-bg-current; transform: rotate(360deg);}
+	&:after { border-left-color: @wizard-bg-current }
+}
+
+// ----> Old Browser Compatibility <---- //
+.old-browser .wizard > li > span:before {
+	content: none;
+}
+
+
+
+
+
+// ----> Badges <---- //
+.wizard > li .badge {
+	background: @blue-darker;
+	border-radius: 100px;
+	color: #fff;
+	float: left;
+	font-size: 20px;
+	margin: -4px 5px 0 0;
+	padding: 6px 10px;
+}
+
+.wizard > li.current .badge {
+	background: #fff;
+	color: #6859A3;
+}
+
+// ----> Glyphicon <---- //
+.wizard > li.completed .glyphicon {
+	color: #B2BB24;
+	margin-right: 15px;
+}
+
+
+// -------> Tablet <------- //
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+	.wizard {
+		font-size: 13px;
+	}
+
+	.wizard > li .badge,
+	.wizard > li .glyphicon {
+		display: none;
+	}
+
+	.wizard > li > span {
+		padding: 10px 5px 10px 15px;
+	}
+}
+
+
+
+
+
+
+// -------> Mobile <------- //
+@media (max-width: @screen-xs-max) {
+	.wizard > li {
+		display: block;
+		float: none;
+		margin-bottom: 4px;
+		width: auto;
+	}
+
+	.wizard > li > span {
+		.box-shadow(inset -1px -3px 0px 0px rgba(0,0,0,0.20));
+		padding-left: 40px;
+	}
+
+	.wizard > li > span:after,
+	.wizard > li > span:before {
+		content: none;
+	}
+}
+
+
+ol.wizard li.disabled, ol.wizard li.disabled a {
+	cursor: not-allowed;
+}

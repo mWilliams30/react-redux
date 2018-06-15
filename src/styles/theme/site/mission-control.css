@@ -1,0 +1,10 @@
+﻿#MissionControlWrapper #MissionControlStatistics h3 {
+  margin-bottom: 0;
+}
+#MissionControlWrapper #MissionControlStatistics .equal {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 1;
+  top: 5px;
+  position: relative;
+}

@@ -1,0 +1,54 @@
+﻿#ManageImagesGrid {
+	.row {
+		margin: 20px 0;
+		text-align: center;
+
+		div[class^="col-"] {
+			> span {
+				width: 180px;
+				height: 180px;
+				display: block;
+				margin: auto;
+				border: 1px solid grey;
+				overflow: hidden;
+				position: relative;
+
+				img {
+					width: 100%;
+				}
+
+				span.image-name {
+					position: absolute;
+					top: 5px;
+					left: 5px;
+					font-size: 10px;
+					background-color: white;
+					padding: 2px;
+					border: 1px dashed grey;
+					opacity: 0.8;
+					filter: alpha(opacity=80); /* For IE8 and earlier */
+				}
+
+				span.glyphicon {
+					position: absolute;
+					top: 5px;
+					right: 5px;
+					z-index: 999;
+					padding: 5px 6px 5px 5px;
+					border: 1px dashed grey;
+					background-color: white;
+					cursor: pointer;
+					opacity: 0.8;
+					filter: alpha(opacity=80); /* For IE8 and earlier */
+				}
+
+				span.glyphicon:hover {
+					background-color: white;
+					border: 1px solid grey;
+					opacity: 1;
+					filter: alpha(opacity=100); /* For IE8 and earlier */
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,135 @@
+﻿.motorcycle-restricted-wording-requirements ul {
+	padding-top: 12px !important;
+}
+
+.quote-home-cover-level-wrap,
+.quote-home-cover-level-description-wrap,
+.quote-requirements-home-wrap {
+	display: inline-block;
+	color: @blue-darkest;
+	font-size: 22px;
+	margin-top: 6px;
+	width: 140px;
+	margin-top: 0;
+	line-height: 130px;
+	text-align: center;
+	border-right: 1px solid #c4cfe0;
+
+	label {
+		display: inline-block;
+		vertical-align: middle;
+		color: #333;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 16px;
+		padding-left: 20px;
+		padding-right: 20px;
+		text-transform: uppercase;
+	}
+}
+
+.quote-home-cover-level-wrap {
+	label {
+		font-weight: bold;
+	}
+}
+
+.quote-home-cover-level-description-wrap {
+	label {
+		font-size: 12px;
+	}
+}
+
+.quote-requirements-home-wrap {
+	width: 233px;
+	line-height: 130px;
+
+	div {
+		margin: auto;
+		margin-left: 5px;
+		margin-right: 5px;
+		display: inline-block;
+		vertical-align: middle;
+		width: 218px;
+
+		ul {
+			box-shadow: 0 2px 4px 0 #fff,inset 0 1px 5px 0 #c4cce0;
+			border-radius: 3px;
+			background: #dee4f1;
+			font-size: 10.5px;
+			line-height: 18px;
+			padding: 14px;
+			list-style: none;
+			color: #232e42;
+			margin-right: 4px;
+			margin-bottom: 0;
+
+			li {
+				text-align: left;
+				text-transform: uppercase;
+				line-height: 18px;
+			}
+		}
+	}
+}
+
+//
+// ----> Tablet <----- //
+//
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max) {
+	.quote-home-cover-level-wrap,
+	.quote-home-cover-level-description-wrap {
+		width: 100px;
+	}
+
+	.quote-home-cover-level-description-wrap {
+		label {
+			font-size: 9px;
+		}
+	}
+
+	.quote-requirements-home-wrap {
+		width: 210px;
+
+		div {
+			width: 190px;
+
+			ul {
+				padding: 6px;
+
+				li {
+					font-size: 9px;
+				}
+			}
+		}
+	}
+}
+
+//
+// ----> Mobile <----- //
+//
+@media (max-width: @screen-xs-max) {
+	.quote-home-cover-level-wrap {
+		width: 49%;
+	}
+
+	.quote-home-cover-level-description-wrap {
+		width: 49%;
+		border: 0;
+	}
+
+	.quote-requirements-home-wrap {
+		width: 100%;
+		border: 0;
+		border-top: 1px solid #c4cfe0;
+
+		div {
+			width: 100%;
+			margin: 0;
+
+			ul {
+				width: 100%;
+			}
+		}
+	}
+}

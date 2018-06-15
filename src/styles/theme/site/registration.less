@@ -1,0 +1,174 @@
+﻿#RegisterModal {
+
+	.panel-heading {
+		position: relative;
+		color: #fff;
+		padding: 10px 0;
+		background-color: #19a4e0;
+		margin: 0;
+
+		.close {
+			position: absolute;
+			top: 0;
+			right: 0;
+			margin: 0;
+			color: #fff;
+			opacity: 1;
+			text-shadow: none;
+			font-size: 22px;
+
+			&:hover {
+				opacity: 0.8;
+			}
+
+			span {
+				margin: 0;
+			}
+		}
+
+		.panel-title {
+			font-size: 22px;
+			font-weight: bold;
+		}
+	}
+
+	.control-label {
+		text-align: left;
+		color: #333;
+
+		.glyphicon {
+			font-size: 12px;
+			vertical-align: super;
+		}
+	}
+
+	.form-control {
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		border-width: 1px;
+	}
+
+	#RegisterModalFinish {
+		background-color: @move-forward-button-colour;
+	}
+
+	@media (max-width: 767px) {
+		div[id^="RegistrationStep"] {
+			.form-group {
+				margin-bottom: 0;
+			}
+
+			.date-of-birth-form-control-wrap,
+			.date-test-passed-form-control-wrap {
+				select {
+					margin-right: 4px;
+					padding-right: 0;
+				}
+			}
+
+			.date-of-birth-form-control-wrap {
+				#DateOfBirthDay {
+					width: 70px;
+				}
+
+				#DateOfBirthMonth {
+					width: 95px;
+				}
+
+				#DateOfBirthYear {
+					width: 85px;
+				}
+			}
+
+			.toggle {
+				z-index: 1;
+			}
+		}
+	}
+
+	@media (min-width: @screen-sm) {
+		.date-of-birth-form-control-wrap {
+
+			#DateOfBirthYear {
+				margin-left: 10px;
+			}
+		}
+
+		.date-test-passed-form-control-wrap {
+
+			#DateTestPassedYear {
+				margin-left: 10px;
+			}
+		}
+
+		.search-results-container {
+			height: 170px;
+		}
+
+		.toggle {
+			z-index: 1;
+		}
+	}
+
+	@media (min-width: @screen-md) {
+		.modal-dialog {
+			width: 900px;
+		}
+
+		.date-of-birth-form-control-wrap {
+			#DateOfBirthDay {
+				width: 70px !important;
+			}
+
+			#DateOfBirthMonth {
+				width: 100px !important;
+			}
+
+			#DateOfBirthYear {
+				width: 86px !important;
+			}
+		}
+	}
+
+	@media (min-width: @screen-lg) {
+		.modal-dialog {
+			width: 950px;
+		}
+	}
+
+	.date-of-birth-form-control-wrap {
+		#DateOfBirthDay {
+			width: 78px;
+		}
+
+		#DateOfBirthMonth {
+			width: 132px;
+		}
+
+		#DateOfBirthYear {
+			width: 86px;
+		}
+	}
+
+	.date-test-passed-form-control-wrap {
+
+		#DateTestPassedMonth {
+			width: 132px;
+		}
+
+		#DateTestPassedYear {
+			width: 86px;
+		}
+	}
+
+	#PostcodeLookup {
+
+		#Postcode {
+			text-transform: uppercase;
+		}
+	}
+
+	.correspondence-checks {
+		text-align: right;
+	}
+}

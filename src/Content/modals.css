@@ -1,0 +1,29 @@
+﻿#ProductCoverSummaryWrapper .modal .modal-dialog {
+	width: 850px;
+}
+
+.modal p {
+	font-size: 14px;
+	color: #18202E;
+}
+
+.modal h1 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #18202E;
+}
+
+.modal h2 {
+	font-size: 14px;
+	color: #18202E;
+}
+
+#ProductCoverSummaryWrapper .modal .modal-body {
+	overflow-y: scroll;
+	height: 500px;
+}
+
+.modal table {
+	color: #18202E;
+	font-size: 10px;
+}

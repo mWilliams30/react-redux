@@ -1,0 +1,132 @@
+﻿@media (max-width: @screen-xs-max) {
+	#PolicyStartHourWrapper {
+		float: left;
+	}
+
+	#PolicyStartMinuteWrapper {
+		float: left;
+	}
+
+	#UnderwriterSelectionBackButtonWrapper {
+		margin-top: 40px;
+	}
+}
+
+.form-control-wrap-residency-type {
+	margin-top: 10px;
+}
+
+ul.quote-requirements-motorcycle {
+	padding: 12px 10px;
+}
+
+@media (max-width: @screen-md-max) {
+	ul.quote-requirements {
+		line-height: 14px;
+
+		li {
+			margin-bottom: 6px;
+		}
+	}
+
+	ul.quote-requirements-motorhome {
+		line-height: 12px !important;
+}
+}
+
+@media (max-width: @screen-sm-max) {
+	ul.quote-requirements {
+		padding-top: 12px;
+
+		li {
+			font-size: 10px;
+			margin-bottom: 0;
+		}
+	}
+
+	ul.quote-requirements-motorhome li {
+		font-size: 9.5px;
+}
+}
+
+@media (max-width: @screen-xs-max) {
+	#QuoteReferencePanel {
+		margin-top: 20px;
+	}
+
+	ul.quote-requirements {
+		padding-top: 20px;
+	}
+}
+
+#CompareQuotes,
+.underwriter-selection-button {
+	#gradient > .vertical(@onecallinsurance_brand-green-gradient-start, @onecallinsurance_brand-green-gradient-end);
+	box-shadow: 0 3px 3px 0 rgba(50,50,50,.25);
+	.clearfix;
+	border: 0;
+	color: #fff;
+
+	&:hover,
+	&:focus {
+		background: @onecallinsurance_brand-green-hover;
+		color: #fff;
+	}
+}
+
+@media (max-width: @screen-sm-max) {
+	#PanelPersonalDetailsNextButton,
+	#PanelContactDetailsNextButton,
+	#PanelVehicleAndLicenceDetailsNextButtonFullLicence,
+	#PanelVehicleAndLicenceDetailsNextButtonProvisionalLicence,
+	#PanelAdditionalDriversNextButton,
+	#PanelQuoteTypeNextButton,
+	#CompareQuotes,
+	#PanelLicenceAndUseNextButton,
+	#PanelVehicleAndParkingNextButton {
+		margin-top: 25px;
+	}
+}
+
+#PanelPersonalDetailsNextButtonLoading,
+#PanelContactDetailsNextButtonLoading,
+#PanelVehicleAndLicenceDetailsNextButtonLoadingFullLicence,
+#PanelVehicleAndLicenceDetailsNextButtonLoadingProvisionalLicence,
+#PanelAdditionalDriversNextButtonLoading,
+#PanelQuoteTypeNextButtonLoading,
+#PanelFinalNextButtonLoading,
+#PanelLicenceAndUseNextButtonLoading,
+#PanelVehicleAndParkingNextButtonLoading {
+	display: none;
+	padding: 11px 39px 11px 40px;
+}
+
+#BasicDetailsContainer {
+	padding-top: 20px;
+}
+
+#ImpoundedVehicleQuestion {
+	margin-bottom: 0;
+}
+
+#VehicleRegNotKnownButton {
+	float: right;
+	box-shadow: none;
+}
+
+ul.bullets-as-pdf {
+	margin: 10px 0 20px 0;
+}
+
+#BasicDetailsPanelVehicleAndLicenceProvisionalLicenceNextButton {
+	display: none;
+}
+
+
+#RenewalDateWrapper{
+
+    border-style: solid;
+    border-width: medium;
+    padding: 10px;
+    background-color: @blue-darkest;
+}

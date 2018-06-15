@@ -1,0 +1,29 @@
+// =Nav Pills & Stacked
+// ------------------------------
+.nav-pills > li > a {
+	background: @blue-dark;
+	border-radius: 0;
+	color: @yellow-dark;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.nav-pills > li > a {
+	&:hover,
+	&:focus {
+		background: @blue-dark;
+		color: @yellow-dark;
+		text-decoration: underline;
+	}
+}
+
+
+.nav-pills > li.active > a {
+	&,
+	&:hover,
+	&focus {
+		background-color: @blue-lighter;
+		cursor: pointer;
+	}
+}

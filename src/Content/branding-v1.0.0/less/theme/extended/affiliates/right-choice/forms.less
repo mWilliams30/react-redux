@@ -1,0 +1,197 @@
+// =Forms
+// ------------------------------
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="password"] {
+	line-height: 1em;
+}
+
+label {
+	font-weight: normal;
+	color: @yellow-dark;
+}
+
+label span.label-strapline {
+	display: block;
+	font-size: 11px;
+	margin-top: -9px;
+}
+
+input[type="radio"] + span {
+	color: @text-color;
+}
+
+/*.form-horizontal .control-label {
+	padding-top: 4px;
+}*/
+
+.form-control,
+.has-feedback .form-control {
+	border-width: 2px;
+	height: 42px;
+
+	&,
+	&:focus {
+		.box-shadow(0px 1px 2px 0px rgba(0,0,0,0.27));
+	}
+
+	&[disabled],
+	&[readonly]:not(.mbsc-comp),
+	fieldset[disabled] & {
+		border-color: @blue-dark;
+		background-color: #333;
+		cursor: default;
+		color: #fff;
+
+		&.picker__input {
+			background-color: #FFF;
+			border-color: @input-border;
+			color: @input-color;
+		}
+	}
+}
+
+.form-control-inverse {
+	border-color: #D1D8E7;
+
+
+	&,
+	&:focus {
+		box-shadow: none;
+	}
+}
+
+.confirm-details-vehicle-value span.form-control-feedback {
+	top: 36px!important;
+}
+
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+	margin-top: -2px;
+}
+
+.has-feedback .form-control {
+	padding-right: 12px;
+}
+
+
+.has-feedback .form-control-wrap { // This is a custom class extension
+	padding-right: 55px;
+}
+
+.form-control-wrap {
+	select {
+		padding: 6px 1px 6px 8px;
+	}
+}
+
+.checkbox,
+.radio {
+	label {
+		color: #909DB3;
+	}
+
+	label.highlight {
+		color: @yellow-dark;
+	}
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin-top: 8px;
+}
+
+.form-text-result {
+	margin-top: 7px;
+}
+
+.contact-us-telephone-number {
+	margin: auto;
+	text-align: center;
+	font-size: 24px;
+	color: @yellow-dark;
+	width: 100%;
+	display: block;
+}
+
+table.ui-datepicker-calendar {
+	font-size: 20px;
+	margin-left: 5px;
+
+	th {
+		width: 40px;
+	}
+}
+
+a.ui-datepicker-prev,
+a.ui-datepicker-next {
+	display: none;
+}
+
+select.ui-datepicker-month,
+select.ui-datepicker-year {
+	border-width: 2px;
+	height: 42px;
+	margin: 10px;
+	width: 123px;
+
+	&,
+	&:focus {
+		.box-shadow(0px 1px 2px 0px rgba(0,0,0,0.27));
+	}
+}
+
+.ui-datepicker-calendar {
+	th,td {
+		text-align: center;
+	}
+
+	td.ui-datepicker-unselectable {
+		color: @gray-light;
+	}
+
+	a {
+		display: block;
+	}
+
+	a.ui-state-active {
+		background-color: @blue-lighter;
+		color: #fff;
+	}
+}
+
+.date-of-birth-form-control-wrap {
+	#DateOfBirthDay,
+	#AdditionalDriverOneDateOfBirthDay,
+	#AdditionalPersonDateOfBirthDay {
+		width: 78px;
+	}
+
+	#DateOfBirthMonth,
+	#AdditionalDriverOneDateOfBirthMonth,
+	#AdditionalPersonDateOfBirthMonth {
+		width: 132px;
+		@media (min-width: @screen-xs-max) {
+			margin-left: 10px;
+		}
+	}
+
+	#DateOfBirthYear,
+	#AdditionalDriverOneDateOfBirthYear,
+	#AdditionalPersonDateOfBirthYear {
+		width: 86px;
+		@media (min-width: @screen-xs-max) {
+			margin-left: 10px;
+		}
+	}
+}
+
+.form-control-checkbox {
+	margin-top: 0;
+	width: 28px;
+	height: 28px;
+}

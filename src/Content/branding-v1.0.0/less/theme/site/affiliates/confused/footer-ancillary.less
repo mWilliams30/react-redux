@@ -1,0 +1,95 @@
+// =Ancillary Footer
+// ------------------------------
+
+.ancillary-footer {
+	background: @blue-light;
+}
+
+.ancillary-footer > .container {
+	background: @blue-light;
+	max-width: 990px;
+	.clearfix;
+}
+
+.ancillary-footer .ancillary-navigation a {
+	color: @confused_brand-blue1;
+	font-size: 14px;
+}
+
+.ancillary-footer .ancillary-navigation .nav li {
+	border-bottom: 1px solid #C48509;
+	border-top: 1px solid #FFE1A6;
+	margin: 0;
+
+	&:first-child { border-top: none; }
+	&:last-child { border-bottom: none; }
+}
+
+.social-navigation-footer {
+	float: left;
+	margin-top: 14px;
+	.clearfix;
+
+	> a {
+		background: no-repeat scroll 0 0;
+		.img-retina('../../../images/icons/sprite-social-icons-blue.png', '../../../images/icons/sprite-social-icons-blue@2x.png', 198px,78px);
+		.square(38px);
+		.hide-text;
+
+		float: left;
+		margin-left: 5px;
+
+		&:hover { background-color: #fff; }
+	}
+
+	> .twitter      { background-position: 0        0 }
+	> .facebook     { background-position: -40px    0 }
+	> .youtube      { background-position: -80px    0 }
+	> .linkedin     { background-position: -120px   0 }
+	> .share        { background-position: -160px   0 }
+	> .google       { background-position: -200px   0 }
+
+
+	> .twitter:hover      { background-position: 0        -40px }
+	> .facebook:hover     { background-position: -40px    -40px }
+	> .youtube:hover      { background-position: -80px    -40px }
+	> .linkedin:hover     { background-position: -120px   -40px }
+	> .share:hover        { background-position: -160px   -40px }
+	> .google:hover       { background-position: -200px   -40px }
+
+}
+
+
+// Mobile Nav Menu //
+@media (max-width: @screen-xs-max)
+{
+	.ancillary-footer > .container {
+		padding: 0;
+	}
+
+	.ancillary-footer .mobile-navigation {
+
+		.open {
+			background-color: #FFC31A;
+
+			.dropdown { display: block; }
+			a { background-color: transparent; }
+		}
+
+		.dropdown {
+			display: none;
+			list-style: none;
+			padding-left: 30px;
+
+			li {
+				border: none;
+			}
+
+			a {
+				display: block;
+				padding: 6px;
+			}
+		}
+	}
+}
+

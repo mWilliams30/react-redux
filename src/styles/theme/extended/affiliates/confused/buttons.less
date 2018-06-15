@@ -1,0 +1,223 @@
+// =Buttons
+// ------------------------------
+.btn {
+	border-width: 2px;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	white-space: normal;
+}
+
+.btn-default {
+	text-shadow: none;
+}
+
+.btn-lg {
+	font-size: 17px;
+	padding: 20px 35px 18px;
+}
+
+
+.btn-primary {
+	.glyphicon {
+		color: #fff;
+	}
+}
+
+.btn-warning {
+	.box-shadow(inset 0px 4px 1px 0px rgba(255,255,255,0.46));
+}
+
+// =Homepage Hero Button
+// ------------------------------
+.btn-primary, .btn-hero, #ProceedToPayment, .btn-call-to-action {
+	#gradient > .vertical(@confused_brand-green-gradient-start, @confused_brand-green-gradient-end);
+	.box-shadow(0px 6px 4px 0px rgba(0,0,0,0.44));
+	.clearfix;
+	border: 0px solid @confused_brand-green-gradient-start;
+	background-color: @confused_brand-green-gradient-start;
+	border-color: @confused_brand-green-gradient-start;
+	color: #fff;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 5px;
+	box-shadow: 0 3px 3px 0 rgba(50,50,50,.25);
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .02em;
+	text-decoration: none;
+	font-weight: 700;
+
+	&:hover,
+	&:focus {
+		background: @confused_brand-green-hover;
+		color: #fff;
+	}
+}
+
+// =Homepage Hero Button
+// ------------------------------
+.btn-success {
+	#gradient > .vertical(@confused-light-grey, @confused-grey);
+	.box-shadow(0px 6px 4px 0px rgba(0,0,0,0.44));
+	.clearfix;
+	border: 0px solid @confused-grey;
+	background-color: @confused-grey;
+	border-color: @confused-grey;
+	color: @confused_brand-blue1;
+	padding-left: 25px;
+	padding-right: 25px;
+	border-radius: 5px;
+	box-shadow: 0 3px 3px 0 rgba(50,50,50,.25);
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .02em;
+	text-decoration: none;
+	font-weight: 700;
+
+	&:hover,
+	&:focus {
+		background: @confused-light-grey;
+		color: @confused_brand-blue1;
+	}
+}
+
+.btn-secondary {
+	color: @blue-darkest;
+	background-color: @yellow-dark;
+	//width: 38px;
+	height: 38px;
+	//display: block;
+	padding-top: 5px;
+	text-align: center;
+	//margin-left: 5px;
+	&:hover {
+		color: #fff;
+		background-color: @blue-lighter;
+		//width: 38px;
+		height: 38px;
+		//display: block;
+		padding-top: 5px;
+		text-align: center;
+		//margin-left: 5px;
+	}
+}
+
+.btn-hero img {
+	float: left;
+	margin-right: 12px;
+}
+
+.btn-hero {
+	.cta-wrap {
+		float: left;
+	}
+
+	.primary-cta,
+	.secondary-cta {
+		display: block;
+		text-align: left;
+	}
+
+	.secondary-cta {
+		font-weight: 400;
+		text-shadow: none;
+		text-transform: none;
+
+		> span {
+			color: #fff;
+		}
+	}
+
+	.chevron-wrap {
+		float: right;
+		margin-right: 10px;
+	}
+
+	.glyphicon {
+		color: #fff;
+		font-size: 40px;
+	}
+
+	.glyphicon-my-account {
+		width: 18px;
+	}
+}
+
+.btn-my-account-new-quote {
+	img {
+		margin-top: 8px;
+		margin-right: 20px;
+	}
+}
+
+
+
+// =Payment Mega Button
+// ------------------------------
+.btn-mega {
+	border: 4px solid @confused_brand-green-gradient-start;
+	padding: 20px 30px;
+	text-align: left;
+
+	.primary-cta,
+	.secondary-cta {
+		display: block;
+		line-height: 1.2;
+	}
+
+	.primary-cta {
+		font-size: 22px;
+	}
+
+	.secondary-cta {
+		font-weight: 300;
+	}
+
+	.badge {
+		background: #B2BC00;
+		border-radius: 100px;
+		float: right;
+		font-size: 20px;
+		line-height: 50px;
+		padding: 0;
+		.square(50px);
+		text-align: center;
+		text-shadow: none;
+	}
+
+	.glyphicon {
+		color: #fff;
+		position: relative;
+		top: 2px;
+		left: 1px;
+	}
+
+
+
+	&:hover {
+		border-color: #000a8c;
+		background-color: #000a8c;
+	}
+}
+
+#ProceedToPayment {
+
+	.glyphicon {
+		font-size: 35px;
+	}
+}
+
+#BackButton {
+	border: 0;
+	color: @confused_brand-blue1;
+	background-color: transparent;
+	background-image: none;
+	box-shadow: none;
+	box-sizing: content-box;
+	font-weight: normal;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}

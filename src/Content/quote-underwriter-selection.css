@@ -1,0 +1,41 @@
+﻿.underwriter-image-no-quote {
+	-ms-opacity: 0.4;
+	opacity: 0.4;
+	-webkit-filter: alpha(opacity=40);
+	-moz-filter: alpha(opacity=40);
+	-o-filter: alpha(opacity=40);
+	filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.quote-underwriter-selection-policy-end-date {
+	padding-top: 5px;
+}
+
+.quote-voluntary-excess {
+	margin-left: 30px;
+}
+
+.underwriter-no-quote {
+	color: #2f3b50;
+	display: block;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 16px;
+	text-transform: uppercase;
+}
+
+ul.quote-requirements {
+	font-size: 10.5px;
+	line-height: 18px;
+	padding: 19px 10px;
+}
+
+#UnderwriterSelectionInfoIcon {
+	top: 8px;
+	cursor: pointer;
+}
+
+.fixed-policy-duration-control {
+	position: relative;
+	top: 5px;
+}

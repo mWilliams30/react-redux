@@ -1,0 +1,96 @@
+﻿#AuthenticatedUserQuote {
+
+	.panel-heading {
+		color: #fff;
+		padding: 10px 0;
+		background-color: @blue-lighter;
+		margin: 0;
+	}
+
+	.panel-title {
+		font-size: 22px;
+	}
+
+	.link-to-modal {
+		text-align: right;
+	}
+
+	.has-feedback {
+		.form-control-feedback {
+			top: 0px;
+		}
+	}
+
+	#AdditionalDriverDetails {
+		@media (min-width: @screen-sm) {
+			.date-of-birth-form-control-wrap {
+
+				#AdditionalDriver_DateOfBirthYear {
+					margin-left: 10px;
+				}
+			}
+
+			.date-test-passed-form-control-wrap {
+
+				#AdditionalDriver_DateTestPassedYear {
+					margin-left: 10px;
+				}
+			}
+
+			.search-results-container {
+				height: 170px;
+			}
+		}
+
+		.date-of-birth-form-control-wrap {
+			#AdditionalDriver_DateOfBirthDay {
+				width: 78px;
+				margin-right: 10px;
+			}
+
+			#AdditionalDriver_DateOfBirthMonth {
+				width: 132px;
+				margin-right: 10px;
+			}
+
+			#AdditionalDriver_DateOfBirthYear {
+				width: 86px;
+				margin-left: 0px;
+			}
+		}
+
+		.date-test-passed-form-control-wrap {
+
+			#AdditionalDriver_DateTestPassedMonth {
+				width: 132px;
+			}
+
+			#AdditionalDriver_DateTestPassedYear {
+				width: 86px;
+			}
+		}
+	}
+
+	.quote-submit {
+		float: right;
+		background: @move-forward-button-colour;
+		color: #fff;
+		margin: 10px 0;
+
+		&:hover {
+			background-color: @move-forward-button-colour-dark;
+		}
+	}
+
+	@media (min-width: @screen-sm) {
+		.personal-details {
+			margin-left: -10px;
+		}
+	}
+
+	@media (max-width: @screen-xs) {
+		.personal-details {
+			text-align: right;
+		}
+	}
+}

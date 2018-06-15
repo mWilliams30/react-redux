@@ -1,0 +1,123 @@
+// =Navbars
+// ------------------------------
+.navbar-plain {
+    background-color: transparent;
+    border: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.navbar-plain .navbar-text {}
+
+.navbar-plain .navbar-nav > li > a {
+    color: #4A4A4A;
+    font-size: 17px;
+    line-height: 29px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-shadow: 0px 1px 1px rgba(255,254,255,0.75);
+}
+
+.navbar-plain .navbar-nav > li > a {
+    &:hover,
+    &:focus {
+        color: @navbar-plain-link-active-color;
+        background: @navbar-plain-link-hover-bg;
+        text-shadow: @navbar-plain-link-active-text-shadow;
+    }
+}
+
+.navbar-plain .navbar-nav > .active > a {
+    &,
+    &:hover,
+    &:focus {
+        color: @navbar-plain-link-active-color;
+        text-shadow: @navbar-plain-link-active-text-shadow;
+    }
+}
+
+.navbar-plain .navbar-nav > .disabled > a {
+    &,
+    &:hover,
+    &:focus {
+        color: @navbar-plain-link-disabled-color;
+        background-color: @navbar-plain-link-disabled-bg;
+    }
+}
+
+// Darken the responsive nav toggle
+.navbar-plain .navbar-toggle {
+    border-color: @navbar-plain-toggle-border-color;
+
+    &:hover,
+    &:focus {
+        background-color: @navbar-plain-toggle-hover-bg;
+    }
+
+    .icon-bar {
+        background-color: @navbar-plain-toggle-icon-bar-bg;
+    }
+}
+
+.navbar-plain {
+    .navbar-collapse,
+    .navbar-form {
+        border-color: darken(@navbar-plain-bg, 7%);
+    }
+
+    // Dropdowns
+    .navbar-nav {
+        > .open > a {
+            &,
+            &:hover,
+            &:focus {
+                background-color: @navbar-plain-link-active-bg;
+                color: @navbar-plain-link-active-color;
+            }
+        }
+
+        @media (max-width: @grid-float-breakpoint-max) {
+            // Dropdowns get custom display
+            .open .dropdown-menu {
+                > .dropdown-header {
+                    border-color: @navbar-plain-border;
+                }
+                .divider {
+                    background-color: @navbar-plain-border;
+                }
+                > li > a {
+                    color: @navbar-plain-link-color;
+                    &:hover,
+                    &:focus {
+                        color: @navbar-plain-link-hover-color;
+                        background-color: @navbar-plain-link-hover-bg;
+                    }
+                }
+                > .active > a {
+                    &,
+                    &:hover,
+                    &:focus {
+                        color: @navbar-plain-link-active-color;
+                        background-color: @navbar-plain-link-active-bg;
+                    }
+                }
+                > .disabled > a {
+                    &,
+                    &:hover,
+                    &:focus {
+                        color: @navbar-plain-link-disabled-color;
+                        background-color: @navbar-plain-link-disabled-bg;
+                    }
+                }
+            }
+        }
+    }
+
+    .navbar-link {
+        color: @navbar-plain-link-color;
+        &:hover {
+            color: @navbar-plain-link-hover-color;
+        }
+    }
+
+}

@@ -7,7 +7,6 @@ export default (state = initialState.courses, action) => {
       return action.courses;
 
     case types.CREATE_COURSE_SUCCESS:
-      debugger;
       return [...state, Object.assign({}, action.course)];
 
     case types.UPDATE_COURSE_SUCCESS:
