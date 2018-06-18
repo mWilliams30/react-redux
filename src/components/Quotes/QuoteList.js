@@ -1,14 +1,14 @@
 import React, {PropTypes} from 'react';
-import VoluntaryExcess from './VoluntaryExcess';
+import VoluntaryExcess from './SelectVoluntaryExcess';
 import QuoteRequirements from './QuoteRequirementsList';
 import QuoteSelectButton from './QuoteSelectButton';
 
-const QuoteList = ({quotes}) => {
+const QuoteList = ({quotes, onQuoteSelect, onChange}) => {
     return(
         <div className="quote-results">    
             <div id="QuotingUnderwriterList">
-                {quotes.map((quote, key) =>           
-                    <div name="quoting-underwriter-overlay" key={key}>
+                {quotes.map((quote) =>           
+                    <div name="quoting-underwriter-overlay" key={quote.UnderwriterId}>
                         <article className="quote-result" name="quoting-result-article">
                         <header className="quote-header">
                             <div className="quote-brand-wrap">
@@ -19,7 +19,10 @@ const QuoteList = ({quotes}) => {
                             <div className="quote-choice-wrap quote-excess-wrap" name="quoting-underwriter-section">
                                 <label>
                                 Voluntary Excess
-                                {quote.UnderwriterSupportsVoluntaryExcess && <VoluntaryExcess />}                                                                           
+                                {quote.UnderwriterSupportsVoluntaryExcess && 
+                                    <VoluntaryExcess 
+                                        onChange={onChange} 
+                                        name="voluntaryExcess"/>}                                                                           
                                 </label>
                             </div> 
                             <div className="quote-requirements-wrap" name="quoting-underwriter-section">
@@ -27,7 +30,7 @@ const QuoteList = ({quotes}) => {
                             </div>
                         </section>
                         <footer className="quote-footer" name="quoting-underwriter-section">                       
-                            <QuoteSelectButton premium={quote.Premium} />
+                            <QuoteSelectButton premium={quote.Premium} onClick={(e) => onQuoteSelect(quote.UnderwriterId, e)} />
                         </footer>
                     </article>
                 </div>                             
@@ -38,7 +41,9 @@ const QuoteList = ({quotes}) => {
 };
 
 QuoteList.propTypes = {
-    quotes: PropTypes.array.isRequired
+    quotes: PropTypes.array.isRequired,
+    onQuoteSelect: PropTypes.func.isRequired,
+    onChange: PropTypes.func.isRequired
 };
 
 export default QuoteList;
