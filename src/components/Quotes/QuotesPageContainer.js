@@ -15,11 +15,8 @@ class QuotesPageContainer extends React.Component{
         this.updateSelectedQuoteState = this.updateSelectedQuoteState.bind(this);
     }
 
-    onQuoteSelect(underwriterId, event){
-        event.preventDefault();
-        let selectedQuote = Object.assign({}, this.state.selectedQuote);       
-        let quote = getQuoteByUnderwriterId(this.props.quotes, underwriterId);    
-        console.log(quote);
+    onQuoteSelect(event, quote){
+        event.preventDefault();      
         return this.setState({selectedQuote: quote});                       
     }
 

@@ -3,7 +3,7 @@ import VoluntaryExcess from './SelectVoluntaryExcess';
 import QuoteRequirements from './QuoteRequirementsList';
 import QuoteSelectButton from './QuoteSelectButton';
 
-const QuoteList = ({quotes, onQuoteSelect, onChange}) => {
+const QuoteList = ({quotes, onQuoteSelect, onChange}) => {  
     return(
         <div className="quote-results">    
             <div id="QuotingUnderwriterList">
@@ -30,7 +30,7 @@ const QuoteList = ({quotes, onQuoteSelect, onChange}) => {
                             </div>
                         </section>
                         <footer className="quote-footer" name="quoting-underwriter-section">                       
-                            <QuoteSelectButton premium={quote.Premium} onClick={(e) => onQuoteSelect(quote.UnderwriterId, e)} />
+                            <QuoteSelectButton premium={quote.Premium} onClick={(e) => onQuoteSelect(e, quote)} />
                         </footer>
                     </article>
                 </div>                             
