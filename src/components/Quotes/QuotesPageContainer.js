@@ -16,7 +16,8 @@ class QuotesPageContainer extends React.Component{
     }
 
     onQuoteSelect(event, quote){
-        event.preventDefault();      
+        event.preventDefault();
+        alert(quote.UnderwriterName + " - £" + quote.Premium);      
         return this.setState({selectedQuote: quote});                       
     }
 
